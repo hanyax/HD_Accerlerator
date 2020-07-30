@@ -1,12 +1,10 @@
-module adder  #(parameter WIDTH=4) (A, B, SUM, CO);  
-    output logic [WIDTH-1:0] SUM;  
-    output logic CO;  
-    input  logic [WIDTH-1:0] A, [WIDTH-1:0] B;  
+// source https://www.nandland.com/vhdl/modules/module-full-adder.html
 
-    logic [WIDTH:0] tmp; 
+module full_adder (i_bit1, i_bit2, i_carry, o_sum, o_carry);
+  input logic i_bit1, i_bit2, i_carry;
+  output logic o_sum, o_carry;
 
-    assign tmp = A + B;  
-    assign SUM = tmp [WIDTH-1:0];  
-    assign CO  = tmp [WIDTH];  
-
-endmodule 
+  assign o_sum   = i_bit1 ^ i_bit2 ^ i_carry;
+  assign o_carry = (i_bit1 ^ i_bit2) & i_carry) | (i_bit1 & i_bit2);
+    
+endmodule
