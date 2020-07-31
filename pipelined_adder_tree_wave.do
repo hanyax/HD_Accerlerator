@@ -1,12 +1,12 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /pipelined_adder_tree_testbench/period
-add wave -noupdate /pipelined_adder_tree_testbench/out
+add wave -noupdate -radix unsigned /pipelined_adder_tree_testbench/out
 add wave -noupdate /pipelined_adder_tree_testbench/inputs
 add wave -noupdate /pipelined_adder_tree_testbench/clk
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {0 ps} 0}
-quietly wave cursor active 0
+WaveRestoreCursors {{Cursor 1} {174 ps} 0}
+quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
 configure wave -justifyvalue left
