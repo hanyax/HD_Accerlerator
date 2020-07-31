@@ -1,0 +1,127 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/My Drive/Research/HD_Accerlator_Reseach/Verilog
+vfull_adder
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1596169867
+!i10b 1
+!s100 51OA59GhV5iOFVV5h8J@I1
+IKO6:5C=IjBN9@1:?FigHn3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 pipelined_adder_tree_sv_unit
+S1
+R0
+Z5 w1596165343
+Z6 8adder.sv
+Z7 Fadder.sv
+L0 21
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1596169867.000000
+Z10 !s107 adder.sv|./pipelined_adder_tree.sv|
+Z11 !s90 -reportprogress|300|./pipelined_adder_tree.sv|
+!i113 1
+Z12 tCvgOpt 0
+vN_bit_adder
+R1
+R2
+!i10b 1
+!s100 9U^oQ6g7f0C1;[fS3on1`0
+I5d6ebnaNZ:E;T_cREBGnK1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+n@n_bit_adder
+vN_bit_adder_testbench
+R1
+R2
+!i10b 1
+!s100 ;lkU6Qh;3iYNA]dN[WVe@2
+I[^Tj6Cg_mihEQizF9V`4@3
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 30
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+n@n_bit_adder_testbench
+vpipelined_adder_tree
+R1
+R2
+!i10b 1
+!s100 >:NjWPUY?E4:D0GUih:iL3
+I[eoCHcgNQoaLGI^_^lGZ:3
+R3
+R4
+S1
+R0
+Z13 w1596169862
+Z14 8./pipelined_adder_tree.sv
+Z15 F./pipelined_adder_tree.sv
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+vpipelined_adder_tree_testbench
+R1
+R2
+!i10b 1
+!s100 A:L=@3@>mSPM<[Gmh@k<]3
+I0MNjbiT272Cde]4iHM_`Y0
+R3
+R4
+S1
+R0
+R13
+R14
+R15
+L0 41
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
