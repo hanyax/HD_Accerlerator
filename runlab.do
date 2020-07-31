@@ -6,16 +6,17 @@ vlib work
 #     their own "vlog" line below.
 vlog "./adder.sv"
 vlog "./pipelined_adder_tree.sv"
+vlog "./accumulator.sv"
 
 # Call vsim to invoke simulator
 #     Make sure the last item on the line is the name of the
 #     testbench module you want to execute.
-vsim -voptargs="+acc" -t 1ps -lib work pipelined_adder_tree_testbench
+vsim -voptargs="+acc" -t 1ps -lib work mux_accumulator_testbench
 
 # Source the wave do file
 #     This should be the file that sets up the signal window for
 #     the module you are testing.
-do pipelined_adder_tree_wave.do
+do mux_accumulator_wave.do
 
 # Set the window types
 view wave

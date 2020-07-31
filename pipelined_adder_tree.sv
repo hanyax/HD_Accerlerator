@@ -1,3 +1,5 @@
+// Fully pipelined adder and fully combinational adder
+
 `include "adder.sv"
 
 module pipelined_adder_tree #(parameter INPUT_WIDTH = 8) (out, clk, inputs, last_in);
@@ -9,32 +11,54 @@ module pipelined_adder_tree #(parameter INPUT_WIDTH = 8) (out, clk, inputs, last
     logic [7:0][INPUT_WIDTH-1:0]    first_inter, first_store;
     logic [3:0][INPUT_WIDTH-1:0]    second_inter, second_store;
     logic [1:0][INPUT_WIDTH-1:0]    third_inter, third_store;
-    logic [INPUT_WIDTH-1:0]         fourth_inter, fourth_store, lastIn_first, lastIn_second, lastIn_third, lastIn_fourth;
+    logic [INPUT_WIDTH-1:0]         fourth_inter, fourth_store, lastIn_first, lastIn_second, lastIn_third, lastIn_fourth, temp_out;
 
     genvar i;
     generate
+        /*
+        for(i=0; i<16; i+=2) begin : first_results
+            N_bit_adder #(8) adder (.input1(inputs[i]), .input2(inputs[i+1]), .out(first_inter[i/2]));
+        end
+        */
         for(i=0; i<16; i+=2) begin : first_results
             N_bit_adder #(8) adder (.input1(inputs[i]), .input2(inputs[i+1]), .out(first_inter[i/2]));
         end
     endgenerate
 
     generate
+        /*
         for(i=0; i<8; i+=2) begin : second_results
             N_bit_adder #(8) adder (.input1(first_store[i]),.input2(first_store[i+1]),.out(second_inter[i/2]));
+        end
+        */
+
+        for(i=0; i<8; i+=2) begin : second_results
+            N_bit_adder #(8) adder (.input1(first_inter[i]),.input2(first_inter[i+1]),.out(second_inter[i/2]));
         end
     endgenerate
 
     generate
+        /*
         for(i=0; i<16; i+=2) begin : third_results
             N_bit_adder #(8) adder (.input1(second_store[i]),.input2(second_store[i+1]),.out(third_inter[i/2]));
         end
+        */
+
+        for(i=0; i<16; i+=2) begin : third_results
+            N_bit_adder #(8) adder (.input1(second_inter[i]),.input2(second_inter[i+1]),.out(third_inter[i/2]));
+        end
     endgenerate
 
+    /*
     N_bit_adder #(8) adder_fourth (.input1(third_store[0]),.input2(third_store[1]),.out(fourth_inter));
-
     N_bit_adder #(8) adder_final (.input1(fourth_store),.input2(lastIn_fourth),.out(out));
+    */
+
+    N_bit_adder #(8) adder_fourth (.input1(third_inter[0]),.input2(third_inter[1]),.out(fourth_inter));
+    N_bit_adder #(8) adder_final (.input1(fourth_inter),.input2(last_in),.out(temp_out));
 
     always_ff @(posedge clk) begin
+        /*
         first_store <= first_inter;
         second_store <= second_inter;
         third_store <= third_inter;
@@ -44,6 +68,9 @@ module pipelined_adder_tree #(parameter INPUT_WIDTH = 8) (out, clk, inputs, last
         lastIn_second <= lastIn_first;
         lastIn_third <= lastIn_second;
         lastIn_fourth <= lastIn_third;
+        */
+        out <= temp_out;
+
     end
 
 endmodule
