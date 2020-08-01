@@ -10,7 +10,7 @@ module N_bit_adder #(parameter WIDTH=8) (input1,input2,out);
   generate 
     for(i=0;i<WIDTH;i=i+1) begin: generate_N_bit_Adder
       if(i==0) 
-        full_adder f(input1[0],input2[0], 0, out[0], carry[0]);
+        full_adder f(input1[0],input2[0], 1'b0, out[0], carry[0]);
       else
         full_adder f(input1[i],input2[i],carry[i-1],out[i],carry[i]);
     end 

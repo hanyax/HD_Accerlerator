@@ -1,6 +1,6 @@
 `include "accumulator.sv"
 
-module encoding #(parameter HVSIZE = 16, FTSIZE = 16, FTWIDTH = 8) (out, done, clk, reset, projections, features);
+module encoding #(parameter HVSIZE = 16, FTSIZE = 16, FTWIDTH = 8, FTTOTALSIZE = 4000) (out, done, clk, reset, projections, features);
     output logic [HVSIZE-1:0][FTWIDTH-1:0] out; 
     output logic done;
     input logic clk, reset;
@@ -9,9 +9,11 @@ module encoding #(parameter HVSIZE = 16, FTSIZE = 16, FTWIDTH = 8) (out, done, c
 
     logic [HVSIZE-1:0][FTWIDTH-1:0] out_temp;
     logic [HVSIZE-1:0][FTSIZE-1:0] proj_ins;
+    shortint count;
 
     // System Verilog seems to not allow unknown i to be in the range value so for loop have some problem with this
     // hard code for now
+    // Push projections array to the left every time to feed into the adders
     always_comb begin
         proj_ins[0] = projections;
         proj_ins[1][15] = projections[0]; proj_ins[1][14:0] = projections[15:1];
@@ -31,27 +33,32 @@ module encoding #(parameter HVSIZE = 16, FTSIZE = 16, FTWIDTH = 8) (out, done, c
         proj_ins[15][15:1] = projections[14:0]; proj_ins[15][0:0] = projections[15:15];
     end
 
+    genvar i;
+    generate
+        for (i=0;i<HVSIZE;i++) begin
+            mux_accumulator adder_mod (.out(out_temp[i]), .clk, .features, .projections(proj_ins[i]), .prev_result(out_temp[i]));
+        end
+    endgenerate
+
     always_ff @(posedge clk) begin
         if (reset) begin
             for (int i = 0; i < HVSIZE; i++) begin
                 out_temp[i] <= 0;
             end
-        end
-        /* 
-        else begin
-            
-        end */
+            done <= 0;
+            count <= 0;
+        end else begin
+            count <= count + FTSIZE;
+            if (count >= FTTOTALSIZE) begin
+                done <= 1;
+                out <= out_temp;
+            end
+            if (done) begin 
+                out <= out;
+            end
+        end 
 
     end
-
-/*
-    genvar i;
-    generate
-        for (i = 0; i < HVSIZE; i++) begin
-            mux_accumulator adder_mod (.out(out_temp[i]), .clk, .features, .projections(), .prev_result(out_temp[i]));
-        end
-    endgenerate
-*/
 
 endmodule
 
@@ -73,15 +80,17 @@ module encoding_testbench;
     initial begin
         reset <= 1; @(posedge clk);
         reset <= 0; @(posedge clk);
-        for (int i = 0; i < 16;i++) begin
-            if (i < 4 || i > 11) begin  
-                projections[i] <= 1;
-            end else begin
-                projections[i] <= 0;
-            end
+        for (int i = 0; i < 16; i++) begin
+            projections[i] <= 1;
+        end; 
+
+        for (int i = 0; i < 16; i++) begin
+            features[i] <= 1;
         end; @(posedge clk);
-        @(posedge clk);
-        @(posedge clk);
+        
+        repeat (250) begin
+            @(posedge clk);
+        end
 
         $stop();
     end 
