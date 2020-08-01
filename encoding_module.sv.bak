@@ -1,0 +1,71 @@
+`include "accumulator.sv"
+
+module encoding #(parameter HVSIZE = 16, FTSIZE = 16, FTWIDTH = 8) (out, done, clk, reset, projections, features);
+    output logic [HVSIZE-1:0][FTWIDTH-1:0] out; 
+    output logic done;
+    input logic clk, reset;
+    input logic [HVSIZE-1:0] projections;
+    input logic [FTSIZE-1:0] [FTWIDTH-1:0] features;
+
+    logic [HVSIZE-1:0][FTWIDTH-1:0] out_temp;
+    logic [HVSIZE-1:0][FTSIZE-1:0] proj_ins;
+
+    always_comb begin
+        for (int i=0;i<HVSIZE;i++) begin
+            proj_ins[i][FTSIZE-1:FTSIZE-1-i] = projections[i:0];
+            proj_ins[i][FTSIZE-1-i-1:0] = projections[FTSIZE-1:i+1];
+        end
+    end
+
+    always_ff @(posedge clk) begin
+        if (reset) begin
+            for (int i = 0; i < HVSIZE; i++) begin
+                out_temp[i] <= 0;
+            end
+        end
+        /* 
+        else begin
+            
+        end */
+
+    end
+
+/*
+    genvar i;
+    generate
+        for (i = 0; i < HVSIZE; i++) begin
+            mux_accumulator adder_mod (.out(out_temp[i]), .clk, .features, .projections(), .prev_result(out_temp[i]));
+        end
+    endgenerate
+*/
+
+endmodule
+
+module encoding_testbench;
+    logic [15:0] [7:0] out;
+    logic [15:0][7:0] features;
+    logic [15:0] projections;
+    logic clk, done, reset;
+
+    parameter period = 100;
+
+    encoding dut(.out, .done, .clk, .reset, .projections, .features);
+
+    initial begin
+        clk <= 1;
+        forever #(period/2) clk <= ~clk;
+    end
+
+    initial begin
+        reset <= 1; @posedge;
+        reset <= 0; @posedge;
+        for (int i = 0; i < 16;i++) begin 
+            projections[i] <= i;
+        end; @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+
+        $stop();
+    end 
+
+endmodule

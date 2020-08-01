@@ -1,7 +1,7 @@
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:33:51 on Jul 31,2020
+# Start time: 16:24:53 on Jul 31,2020
 # vlog -reportprogress 300 ./adder.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -9,10 +9,10 @@ do runlab.do
 # 
 # Top level modules:
 # 	N_bit_adder_testbench
-# End time: 14:33:51 on Jul 31,2020, Elapsed time: 0:00:00
+# End time: 16:24:53 on Jul 31,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:33:51 on Jul 31,2020
+# Start time: 16:24:54 on Jul 31,2020
 # vlog -reportprogress 300 ./pipelined_adder_tree.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -23,27 +23,267 @@ do runlab.do
 # Top level modules:
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_testbench
-# End time: 14:33:52 on Jul 31,2020, Elapsed time: 0:00:01
+# End time: 16:24:54 on Jul 31,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:33:52 on Jul 31,2020
+# Start time: 16:24:54 on Jul 31,2020
 # vlog -reportprogress 300 ./accumulator.sv 
 # -- Compiling module mux_two_one
-# ** Error: (vlog-13069) ** while parsing file included at ./accumulator.sv(1)
-# ** at two_to_one_mux.sv(6): near "begin": syntax error, unexpected begin.
-# ** Error: ** while parsing file included at ./accumulator.sv(1)
-# ** at two_to_one_mux.sv(6): (vlog-13205) Syntax error found in the scope following 'alway_comb'. Is there a missing '::'?
-# End time: 14:33:52 on Jul 31,2020, Elapsed time: 0:00:00
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# 	mux_accumulator_testbench
+# End time: 16:24:54 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:24:54 on Jul 31,2020
+# vlog -reportprogress 300 ./encoding_module.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# -- Compiling module encoding
+# ** Error: ./encoding_module.sv(15): Range must be bounded by constant expressions.
+# ** Error: ./encoding_module.sv(15): Range must be bounded by constant expressions.
+# ** Error: ./encoding_module.sv(16): Range must be bounded by constant expressions.
+# ** Error: ./encoding_module.sv(16): Range must be bounded by constant expressions.
+# -- Compiling module encoding_testbench
+# ** Error: (vlog-13069) ./encoding_module.sv(60): near "posedge": syntax error, unexpected posedge.
+# ** Error: (vlog-13069) ./encoding_module.sv(61): near "posedge": syntax error, unexpected posedge.
+# End time: 16:24:55 on Jul 31,2020, Elapsed time: 0:00:01
+# Errors: 6, Warnings: 0
+# ** Error: C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 10
+# C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./encoding_module.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:08 on Jul 31,2020
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# End time: 16:32:09 on Jul 31,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:09 on Jul 31,2020
+# vlog -reportprogress 300 ./pipelined_adder_tree.sv 
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# End time: 16:32:09 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:09 on Jul 31,2020
+# vlog -reportprogress 300 ./accumulator.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# 	mux_accumulator_testbench
+# End time: 16:32:10 on Jul 31,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:10 on Jul 31,2020
+# vlog -reportprogress 300 ./encoding_module.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# -- Compiling module encoding
+# ** Error (suppressible): ./encoding_module.sv(15): (vlog-2244) Variable 'reminder' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# ** Error: ./encoding_module.sv(15): A static declaration may not use any non-static references in its initial expression
+# ** Error (suppressible): ./encoding_module.sv(16): (vlog-2244) Variable 'boundry' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# ** Error: ./encoding_module.sv(16): A static declaration may not use any non-static references in its initial expression
+# -- Compiling module encoding_testbench
+# ** Error: (vlog-13069) ./encoding_module.sv(62): near "posedge": syntax error, unexpected posedge.
+# ** Error: (vlog-13069) ./encoding_module.sv(63): near "posedge": syntax error, unexpected posedge.
+# End time: 16:32:10 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# ** Error: C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 10
+# C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./encoding_module.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:49 on Jul 31,2020
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# End time: 16:32:49 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:49 on Jul 31,2020
+# vlog -reportprogress 300 ./pipelined_adder_tree.sv 
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# End time: 16:32:50 on Jul 31,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:50 on Jul 31,2020
+# vlog -reportprogress 300 ./accumulator.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# 	mux_accumulator_testbench
+# End time: 16:32:50 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:50 on Jul 31,2020
+# vlog -reportprogress 300 ./encoding_module.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# -- Compiling module encoding
+# ** Error: ./encoding_module.sv(18): Range width must be constant expression.
+# ** Error: ./encoding_module.sv(18): Range must be bounded by constant expressions.
+# ** Error: ./encoding_module.sv(19): Range width must be constant expression.
+# ** Error: ./encoding_module.sv(19): Range must be bounded by constant expressions.
+# -- Compiling module encoding_testbench
+# ** Error: (vlog-13069) ./encoding_module.sv(63): near "posedge": syntax error, unexpected posedge.
+# ** Error: (vlog-13069) ./encoding_module.sv(64): near "posedge": syntax error, unexpected posedge.
+# End time: 16:32:51 on Jul 31,2020, Elapsed time: 0:00:01
+# Errors: 6, Warnings: 0
+# ** Error: C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 10
+# C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./encoding_module.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:33:56 on Jul 31,2020
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# End time: 16:33:57 on Jul 31,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:33:57 on Jul 31,2020
+# vlog -reportprogress 300 ./pipelined_adder_tree.sv 
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# End time: 16:33:57 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:33:57 on Jul 31,2020
+# vlog -reportprogress 300 ./accumulator.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# 	mux_accumulator_testbench
+# End time: 16:33:57 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:33:57 on Jul 31,2020
+# vlog -reportprogress 300 ./encoding_module.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# -- Compiling module encoding
+# -- Compiling module encoding_testbench
+# ** Error: (vlog-13069) ./encoding_module.sv(61): near "posedge": syntax error, unexpected posedge.
+# ** Error: (vlog-13069) ./encoding_module.sv(62): near "posedge": syntax error, unexpected posedge.
+# End time: 16:33:58 on Jul 31,2020, Elapsed time: 0:00:01
 # Errors: 2, Warnings: 0
 # ** Error: C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 9
+# Error in macro ./runlab.do line 10
 # C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
 #     while executing
-# "vlog "./accumulator.sv""
+# "vlog "./encoding_module.sv""
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:35:18 on Jul 31,2020
+# Start time: 16:34:31 on Jul 31,2020
 # vlog -reportprogress 300 ./adder.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -51,10 +291,10 @@ do runlab.do
 # 
 # Top level modules:
 # 	N_bit_adder_testbench
-# End time: 14:35:18 on Jul 31,2020, Elapsed time: 0:00:00
+# End time: 16:34:32 on Jul 31,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:35:18 on Jul 31,2020
+# Start time: 16:34:32 on Jul 31,2020
 # vlog -reportprogress 300 ./pipelined_adder_tree.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -65,146 +305,10 @@ do runlab.do
 # Top level modules:
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_testbench
-# End time: 14:35:19 on Jul 31,2020, Elapsed time: 0:00:01
+# End time: 16:34:32 on Jul 31,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:35:19 on Jul 31,2020
-# vlog -reportprogress 300 ./accumulator.sv 
-# -- Compiling module mux_two_one
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# -- Compiling module pipelined_adder_tree
-# -- Compiling module pipelined_adder_tree_testbench
-# -- Compiling module mux_accumulator
-# ** Error: (vlog-13069) ./accumulator.sv(4): near ";": syntax error, unexpected ';', expecting ')'.
-# End time: 14:35:19 on Jul 31,2020, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 9
-# C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./accumulator.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:35:41 on Jul 31,2020
-# vlog -reportprogress 300 ./adder.sv 
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# End time: 14:35:42 on Jul 31,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:35:42 on Jul 31,2020
-# vlog -reportprogress 300 ./pipelined_adder_tree.sv 
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# -- Compiling module pipelined_adder_tree
-# -- Compiling module pipelined_adder_tree_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# 	pipelined_adder_tree_testbench
-# End time: 14:35:42 on Jul 31,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:35:42 on Jul 31,2020
-# vlog -reportprogress 300 ./accumulator.sv 
-# -- Compiling module mux_two_one
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# -- Compiling module pipelined_adder_tree
-# -- Compiling module pipelined_adder_tree_testbench
-# -- Compiling module mux_accumulator
-# ** Error: (vlog-13069) ./accumulator.sv(4): near ";": syntax error, unexpected ';', expecting ')'.
-# End time: 14:35:42 on Jul 31,2020, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 9
-# C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./accumulator.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:36:33 on Jul 31,2020
-# vlog -reportprogress 300 ./adder.sv 
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# End time: 14:36:34 on Jul 31,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:36:34 on Jul 31,2020
-# vlog -reportprogress 300 ./pipelined_adder_tree.sv 
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# -- Compiling module pipelined_adder_tree
-# -- Compiling module pipelined_adder_tree_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# 	pipelined_adder_tree_testbench
-# End time: 14:36:34 on Jul 31,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:36:34 on Jul 31,2020
-# vlog -reportprogress 300 ./accumulator.sv 
-# -- Compiling module mux_two_one
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# -- Compiling module pipelined_adder_tree
-# -- Compiling module pipelined_adder_tree_testbench
-# -- Compiling module mux_accumulator
-# -- Compiling module mux_accumulator_testbench
-# ** Error: ./accumulator.sv(35): (vlog-2730) Undefined variable: 'inputs'.
-# End time: 14:36:35 on Jul 31,2020, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 9
-# C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./accumulator.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:08 on Jul 31,2020
-# vlog -reportprogress 300 ./adder.sv 
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# End time: 14:37:08 on Jul 31,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:08 on Jul 31,2020
-# vlog -reportprogress 300 ./pipelined_adder_tree.sv 
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# -- Compiling module pipelined_adder_tree
-# -- Compiling module pipelined_adder_tree_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# 	pipelined_adder_tree_testbench
-# End time: 14:37:09 on Jul 31,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:09 on Jul 31,2020
+# Start time: 16:34:32 on Jul 31,2020
 # vlog -reportprogress 300 ./accumulator.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -219,151 +323,11 @@ do runlab.do
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_testbench
 # 	mux_accumulator_testbench
-# End time: 14:37:09 on Jul 31,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work mux_accumulator_testbench 
-# Start time: 14:37:09 on Jul 31,2020
-# Loading sv_std.std
-# Loading work.mux_accumulator_testbench
-# Loading work.mux_accumulator
-# Loading work.pipelined_adder_tree
-# Loading work.N_bit_adder
-# Loading work.full_adder
-# Loading work.mux_two_one
-# ** Error: (vsim-8378) ./accumulator.sv(35): Port size (64) does not match connection size (128) for implicit .name connection port 'features'. The port definition is at: ./accumulator.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut File: ./accumulator.sv
-# ** Error: (vsim-8378) ./accumulator.sv(35): Port size (8) does not match connection size (16) for implicit .name connection port 'projections'. The port definition is at: ./accumulator.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut File: ./accumulator.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(35): [PCDPC] - Port size (8) does not match connection size (32) for port 'prev_result'. The port definition is at: ./accumulator.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut File: ./accumulator.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(21): [PCDPC] - Port size (128) does not match connection size (64) for port 'inputs'. The port definition is at: pipelined_adder_tree.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder File: pipelined_adder_tree.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[8]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[10]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[12]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[14]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[8]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[10]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[12]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[14]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/adder_fourth/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/adder_final/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./runlab.do PAUSED at line 14
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:54 on Jul 31,2020
-# vlog -reportprogress 300 ./adder.sv 
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# End time: 14:37:54 on Jul 31,2020, Elapsed time: 0:00:00
+# End time: 16:34:33 on Jul 31,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:54 on Jul 31,2020
-# vlog -reportprogress 300 ./pipelined_adder_tree.sv 
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# -- Compiling module pipelined_adder_tree
-# -- Compiling module pipelined_adder_tree_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# 	pipelined_adder_tree_testbench
-# End time: 14:37:55 on Jul 31,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:55 on Jul 31,2020
-# vlog -reportprogress 300 ./accumulator.sv 
+# Start time: 16:34:33 on Jul 31,2020
+# vlog -reportprogress 300 ./encoding_module.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -372,185 +336,42 @@ do runlab.do
 # -- Compiling module pipelined_adder_tree_testbench
 # -- Compiling module mux_accumulator
 # -- Compiling module mux_accumulator_testbench
+# -- Compiling module encoding
+# -- Compiling module encoding_testbench
 # 
 # Top level modules:
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_testbench
 # 	mux_accumulator_testbench
-# End time: 14:37:55 on Jul 31,2020, Elapsed time: 0:00:00
+# 	encoding_testbench
+# End time: 16:34:33 on Jul 31,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work mux_accumulator_testbench 
-# Start time: 14:37:09 on Jul 31,2020
+# vsim -voptargs=""+acc"" -t 1ps -lib work encoding_testbench 
+# Start time: 16:34:34 on Jul 31,2020
 # Loading sv_std.std
-# Loading work.mux_accumulator_testbench
-# Loading work.mux_accumulator
-# Loading work.pipelined_adder_tree
-# Loading work.N_bit_adder
-# Loading work.full_adder
-# Loading work.mux_two_one
-# ** Warning: (vsim-3015) ./accumulator.sv(35): [PCDPC] - Port size (8) does not match connection size (32) for port 'prev_result'. The port definition is at: ./accumulator.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut File: ./accumulator.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[8]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[8]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[8]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[9]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[9]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[9]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[10]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[10]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[10]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[11]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[11]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[11]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[12]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[12]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[12]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[13]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[13]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[13]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[14]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[14]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[14]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[15]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[15]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[15]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[8]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[10]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[12]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[14]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[8]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[10]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[12]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[14]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/adder_fourth/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/adder_final/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Error: Cannot open macro file: mux_accumulator_wave.do
-# Error in macro ./runlab.do line 19
-# Cannot open macro file: mux_accumulator_wave.do
+# Loading work.encoding_testbench
+# Loading work.encoding
+# ** Error: Cannot open macro file: encoding_wave.do
+# Error in macro ./runlab.do line 20
+# Cannot open macro file: encoding_wave.do
 #     while executing
-# "do mux_accumulator_wave.do"
+# "do encoding_wave.do"
 add wave -position insertpoint  \
-sim:/mux_accumulator_testbench/out \
-sim:/mux_accumulator_testbench/features \
-sim:/mux_accumulator_testbench/projections \
-sim:/mux_accumulator_testbench/clk
+sim:/encoding_testbench/clk
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: hax032  Hostname: DESKTOP-8CE0NHA  ProcessID: 2788
-#           Attempting to use alternate WLF file "./wlft6fdwa8".
+#           Attempting to use alternate WLF file "./wlft3ngh67".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft6fdwa8
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf {G:/My Drive/Research/HD_Accerlator_Reseach/Verilog/mux_accumulator_wave.do}
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf {G:/My Drive/Research/HD_Accerlator_Reseach/Verilog/mux_accumulator_wave.do}
+#           Using alternate file: ./wlft3ngh67
+add wave -position insertpoint  \
+sim:/encoding_testbench/projections
+add wave -position insertpoint  \
+sim:/encoding_testbench/dut/proj_ins
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {G:/My Drive/Research/HD_Accerlator_Reseach/Verilog/encoding_wave.do}
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:50 on Jul 31,2020
+# Start time: 16:38:37 on Jul 31,2020
 # vlog -reportprogress 300 ./adder.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -558,10 +379,10 @@ do runlab.do
 # 
 # Top level modules:
 # 	N_bit_adder_testbench
-# End time: 14:39:50 on Jul 31,2020, Elapsed time: 0:00:00
+# End time: 16:38:38 on Jul 31,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:50 on Jul 31,2020
+# Start time: 16:38:38 on Jul 31,2020
 # vlog -reportprogress 300 ./pipelined_adder_tree.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -572,10 +393,10 @@ do runlab.do
 # Top level modules:
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_testbench
-# End time: 14:39:51 on Jul 31,2020, Elapsed time: 0:00:01
+# End time: 16:38:38 on Jul 31,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:51 on Jul 31,2020
+# Start time: 16:38:38 on Jul 31,2020
 # vlog -reportprogress 300 ./accumulator.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -590,177 +411,34 @@ do runlab.do
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_testbench
 # 	mux_accumulator_testbench
-# End time: 14:39:51 on Jul 31,2020, Elapsed time: 0:00:00
+# End time: 16:38:38 on Jul 31,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 14:39:52 on Jul 31,2020, Elapsed time: 0:02:43
-# Errors: 5, Warnings: 121
-# vsim -voptargs=""+acc"" -t 1ps -lib work mux_accumulator_testbench 
-# Start time: 14:39:52 on Jul 31,2020
-# Loading sv_std.std
-# Loading work.mux_accumulator_testbench
-# Loading work.mux_accumulator
-# Loading work.pipelined_adder_tree
-# Loading work.N_bit_adder
-# Loading work.full_adder
-# Loading work.mux_two_one
-# ** Warning: (vsim-3015) ./accumulator.sv(35): [PCDPC] - Port size (8) does not match connection size (32) for port 'prev_result'. The port definition is at: ./accumulator.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut File: ./accumulator.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[8]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[8]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[8]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[9]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[9]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[9]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[10]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[10]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[10]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[11]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[11]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[11]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[12]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[12]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[12]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[13]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[13]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[13]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[14]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[14]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[14]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[15]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[15]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[15]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[8]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[10]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[12]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[14]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[8]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[10]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[12]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[14]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/adder_fourth/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/adder_final/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: hax032  Hostname: DESKTOP-8CE0NHA  ProcessID: 2788
-#           Attempting to use alternate WLF file "./wlftsxc3my".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftsxc3my
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./accumulator.sv(51)
-#    Time: 400 ps  Iteration: 1  Instance: /mux_accumulator_testbench
-# Break in Module mux_accumulator_testbench at ./accumulator.sv line 51
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf {G:/My Drive/Research/HD_Accerlator_Reseach/Verilog/mux_accumulator_wave.do}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:39 on Jul 31,2020
+# vlog -reportprogress 300 ./encoding_module.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# -- Compiling module encoding
+# ** Error: ./encoding_module.sv(19): Range width must be constant expression.
+# ** Error: ./encoding_module.sv(19): Range must be bounded by constant expressions.
+# -- Compiling module encoding_testbench
+# End time: 16:38:39 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 10
+# C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./encoding_module.sv""
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:40:39 on Jul 31,2020
+# Start time: 16:39:34 on Jul 31,2020
 # vlog -reportprogress 300 ./adder.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -768,10 +446,10 @@ do runlab.do
 # 
 # Top level modules:
 # 	N_bit_adder_testbench
-# End time: 14:40:39 on Jul 31,2020, Elapsed time: 0:00:00
+# End time: 16:39:35 on Jul 31,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:40:39 on Jul 31,2020
+# Start time: 16:39:35 on Jul 31,2020
 # vlog -reportprogress 300 ./pipelined_adder_tree.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -782,10 +460,10 @@ do runlab.do
 # Top level modules:
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_testbench
-# End time: 14:40:39 on Jul 31,2020, Elapsed time: 0:00:00
+# End time: 16:39:35 on Jul 31,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:40:39 on Jul 31,2020
+# Start time: 16:39:35 on Jul 31,2020
 # vlog -reportprogress 300 ./accumulator.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -800,176 +478,33 @@ do runlab.do
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_testbench
 # 	mux_accumulator_testbench
-# End time: 14:40:40 on Jul 31,2020, Elapsed time: 0:00:01
+# End time: 16:39:36 on Jul 31,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# End time: 14:40:44 on Jul 31,2020, Elapsed time: 0:00:52
-# Errors: 0, Warnings: 73
-# vsim -voptargs=""+acc"" -t 1ps -lib work mux_accumulator_testbench 
-# Start time: 14:40:44 on Jul 31,2020
-# Loading sv_std.std
-# Loading work.mux_accumulator_testbench
-# Loading work.mux_accumulator
-# Loading work.pipelined_adder_tree
-# Loading work.N_bit_adder
-# Loading work.full_adder
-# Loading work.mux_two_one
-# ** Warning: (vsim-3015) ./accumulator.sv(35): [PCDPC] - Port size (8) does not match connection size (32) for port 'prev_result'. The port definition is at: ./accumulator.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut File: ./accumulator.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[8]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[8]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[8]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[9]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[9]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[9]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[10]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[10]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[10]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[11]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[11]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[11]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[12]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[12]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[12]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[13]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[13]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[13]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[14]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[14]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[14]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[15]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[15]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[15]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[8]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[10]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[12]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[14]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[8]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[10]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[12]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[14]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/adder_fourth/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/adder_final/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: hax032  Hostname: DESKTOP-8CE0NHA  ProcessID: 2788
-#           Attempting to use alternate WLF file "./wlft0ifdn8".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft0ifdn8
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./accumulator.sv(58)
-#    Time: 500 ps  Iteration: 1  Instance: /mux_accumulator_testbench
-# Break in Module mux_accumulator_testbench at ./accumulator.sv line 58
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:39:36 on Jul 31,2020
+# vlog -reportprogress 300 ./encoding_module.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# -- Compiling module encoding
+# ** Error: ./encoding_module.sv(19): Range must be bounded by constant expressions.
+# -- Compiling module encoding_testbench
+# End time: 16:39:36 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 10
+# C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./encoding_module.sv""
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:41:17 on Jul 31,2020
+# Start time: 16:41:02 on Jul 31,2020
 # vlog -reportprogress 300 ./adder.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -977,10 +512,10 @@ do runlab.do
 # 
 # Top level modules:
 # 	N_bit_adder_testbench
-# End time: 14:41:17 on Jul 31,2020, Elapsed time: 0:00:00
+# End time: 16:41:03 on Jul 31,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:41:17 on Jul 31,2020
+# Start time: 16:41:03 on Jul 31,2020
 # vlog -reportprogress 300 ./pipelined_adder_tree.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -991,10 +526,10 @@ do runlab.do
 # Top level modules:
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_testbench
-# End time: 14:41:17 on Jul 31,2020, Elapsed time: 0:00:00
+# End time: 16:41:03 on Jul 31,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:41:18 on Jul 31,2020
+# Start time: 16:41:03 on Jul 31,2020
 # vlog -reportprogress 300 ./accumulator.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -1009,176 +544,34 @@ do runlab.do
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_testbench
 # 	mux_accumulator_testbench
-# End time: 14:41:18 on Jul 31,2020, Elapsed time: 0:00:00
+# End time: 16:41:04 on Jul 31,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# End time: 14:41:22 on Jul 31,2020, Elapsed time: 0:00:38
-# Errors: 0, Warnings: 73
-# vsim -voptargs=""+acc"" -t 1ps -lib work mux_accumulator_testbench 
-# Start time: 14:41:22 on Jul 31,2020
-# Loading sv_std.std
-# Loading work.mux_accumulator_testbench
-# Loading work.mux_accumulator
-# Loading work.pipelined_adder_tree
-# Loading work.N_bit_adder
-# Loading work.full_adder
-# Loading work.mux_two_one
-# ** Warning: (vsim-3015) ./accumulator.sv(35): [PCDPC] - Port size (8) does not match connection size (32) for port 'prev_result'. The port definition is at: ./accumulator.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut File: ./accumulator.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[8]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[8]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[8]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[9]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[9]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[9]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[10]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[10]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[10]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[11]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[11]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[11]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[12]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[12]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[12]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[13]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[13]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[13]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[14]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[14]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[14]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[15]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[15]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[15]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[8]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[10]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[12]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[14]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[8]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[10]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[12]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[14]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/adder_fourth/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/adder_final/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: hax032  Hostname: DESKTOP-8CE0NHA  ProcessID: 2788
-#           Attempting to use alternate WLF file "./wlft7itvn9".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft7itvn9
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./accumulator.sv(57)
-#    Time: 500 ps  Iteration: 1  Instance: /mux_accumulator_testbench
-# Break in Module mux_accumulator_testbench at ./accumulator.sv line 57
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:41:04 on Jul 31,2020
+# vlog -reportprogress 300 ./encoding_module.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# -- Compiling module encoding
+# ** Error: ./encoding_module.sv(19): Range width must be constant expression.
+# ** Error: ./encoding_module.sv(19): Range width must be constant expression.
+# -- Compiling module encoding_testbench
+# End time: 16:41:04 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 10
+# C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./encoding_module.sv""
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:42:21 on Jul 31,2020
+# Start time: 16:41:25 on Jul 31,2020
 # vlog -reportprogress 300 ./adder.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -1186,10 +579,10 @@ do runlab.do
 # 
 # Top level modules:
 # 	N_bit_adder_testbench
-# End time: 14:42:22 on Jul 31,2020, Elapsed time: 0:00:01
+# End time: 16:41:25 on Jul 31,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:42:22 on Jul 31,2020
+# Start time: 16:41:25 on Jul 31,2020
 # vlog -reportprogress 300 ./pipelined_adder_tree.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -1200,10 +593,10 @@ do runlab.do
 # Top level modules:
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_testbench
-# End time: 14:42:22 on Jul 31,2020, Elapsed time: 0:00:00
+# End time: 16:41:26 on Jul 31,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:42:22 on Jul 31,2020
+# Start time: 16:41:26 on Jul 31,2020
 # vlog -reportprogress 300 ./accumulator.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -1218,176 +611,51 @@ do runlab.do
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_testbench
 # 	mux_accumulator_testbench
-# End time: 14:42:22 on Jul 31,2020, Elapsed time: 0:00:00
+# End time: 16:41:26 on Jul 31,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 14:42:26 on Jul 31,2020, Elapsed time: 0:01:04
-# Errors: 0, Warnings: 73
-# vsim -voptargs=""+acc"" -t 1ps -lib work mux_accumulator_testbench 
-# Start time: 14:42:26 on Jul 31,2020
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:41:26 on Jul 31,2020
+# vlog -reportprogress 300 ./encoding_module.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# -- Compiling module encoding
+# -- Compiling module encoding_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# 	mux_accumulator_testbench
+# 	encoding_testbench
+# End time: 16:41:27 on Jul 31,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 16:41:28 on Jul 31,2020, Elapsed time: 0:06:54
+# Errors: 17, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work encoding_testbench 
+# Start time: 16:41:28 on Jul 31,2020
 # Loading sv_std.std
-# Loading work.mux_accumulator_testbench
-# Loading work.mux_accumulator
-# Loading work.pipelined_adder_tree
-# Loading work.N_bit_adder
-# Loading work.full_adder
-# Loading work.mux_two_one
-# ** Warning: (vsim-3015) ./accumulator.sv(35): [PCDPC] - Port size (8) does not match connection size (32) for port 'prev_result'. The port definition is at: ./accumulator.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut File: ./accumulator.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[8]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[8]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[8]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[9]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[9]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[9]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[10]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[10]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[10]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[11]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[11]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[11]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[12]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[12]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[12]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[13]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[13]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[13]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[14]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[14]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[14]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[15]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[15]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[15]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[8]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[10]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[12]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[14]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[8]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[10]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[12]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[14]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/adder_fourth/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/adder_final/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
+# Loading work.encoding_testbench
+# Loading work.encoding
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: hax032  Hostname: DESKTOP-8CE0NHA  ProcessID: 2788
-#           Attempting to use alternate WLF file "./wlftev4tfr".
+#           Attempting to use alternate WLF file "./wlftkm5srb".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftev4tfr
+#           Using alternate file: ./wlftkm5srb
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./accumulator.sv(67)
-#    Time: 500 ps  Iteration: 1  Instance: /mux_accumulator_testbench
-# Break in Module mux_accumulator_testbench at ./accumulator.sv line 67
+# ** Note: $stop    : ./encoding_module.sv(71)
+#    Time: 400 ps  Iteration: 1  Instance: /encoding_testbench
+# Break in Module encoding_testbench at ./encoding_module.sv line 71
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:42:38 on Jul 31,2020
+# Start time: 16:46:46 on Jul 31,2020
 # vlog -reportprogress 300 ./adder.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -1395,10 +663,10 @@ do runlab.do
 # 
 # Top level modules:
 # 	N_bit_adder_testbench
-# End time: 14:42:38 on Jul 31,2020, Elapsed time: 0:00:00
+# End time: 16:46:47 on Jul 31,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:42:38 on Jul 31,2020
+# Start time: 16:46:47 on Jul 31,2020
 # vlog -reportprogress 300 ./pipelined_adder_tree.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -1409,10 +677,10 @@ do runlab.do
 # Top level modules:
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_testbench
-# End time: 14:42:39 on Jul 31,2020, Elapsed time: 0:00:01
+# End time: 16:46:47 on Jul 31,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:42:39 on Jul 31,2020
+# Start time: 16:46:47 on Jul 31,2020
 # vlog -reportprogress 300 ./accumulator.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -1427,169 +695,365 @@ do runlab.do
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_testbench
 # 	mux_accumulator_testbench
-# End time: 14:42:39 on Jul 31,2020, Elapsed time: 0:00:00
+# End time: 16:46:48 on Jul 31,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# End time: 14:42:41 on Jul 31,2020, Elapsed time: 0:00:15
-# Errors: 0, Warnings: 73
-# vsim -voptargs=""+acc"" -t 1ps -lib work mux_accumulator_testbench 
-# Start time: 14:42:41 on Jul 31,2020
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:46:48 on Jul 31,2020
+# vlog -reportprogress 300 ./encoding_module.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# -- Compiling module encoding
+# ** Error: ./encoding_module.sv(19): Range width must be constant expression.
+# ** Error: ./encoding_module.sv(19): Range width must be constant expression.
+# -- Compiling module encoding_testbench
+# End time: 16:46:48 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 10
+# C:/intelFPGA/19.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./encoding_module.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:02:10 on Jul 31,2020
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# End time: 17:02:10 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:02:10 on Jul 31,2020
+# vlog -reportprogress 300 ./pipelined_adder_tree.sv 
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# End time: 17:02:11 on Jul 31,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:02:11 on Jul 31,2020
+# vlog -reportprogress 300 ./accumulator.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# 	mux_accumulator_testbench
+# End time: 17:02:11 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:02:11 on Jul 31,2020
+# vlog -reportprogress 300 ./encoding_module.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# -- Compiling module encoding
+# -- Compiling module encoding_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# 	mux_accumulator_testbench
+# 	encoding_testbench
+# End time: 17:02:12 on Jul 31,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:02:15 on Jul 31,2020, Elapsed time: 0:20:47
+# Errors: 5, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work encoding_testbench 
+# Start time: 17:02:15 on Jul 31,2020
 # Loading sv_std.std
-# Loading work.mux_accumulator_testbench
-# Loading work.mux_accumulator
-# Loading work.pipelined_adder_tree
-# Loading work.N_bit_adder
-# Loading work.full_adder
-# Loading work.mux_two_one
-# ** Warning: (vsim-3015) ./accumulator.sv(35): [PCDPC] - Port size (8) does not match connection size (32) for port 'prev_result'. The port definition is at: ./accumulator.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut File: ./accumulator.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[0]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[1]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[2]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[3]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[4]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[5]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[6]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[7]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[8]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[8]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[8]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[9]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[9]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[9]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[10]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[10]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[10]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[11]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[11]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[11]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[12]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[12]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[12]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[13]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[13]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[13]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[14]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[14]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[14]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[15]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in0'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[15]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) ./accumulator.sv(17): [PCDPC] - Port size (16) does not match connection size (8) for port 'in1'. The port definition is at: two_to_one_mux.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/muxes[15]/mux File: two_to_one_mux.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[8]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[10]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[12]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/first_results[14]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/second_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[0]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[2]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[4]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[6]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[8]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[10]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[12]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/third_results[14]/adder/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/adder_fourth/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
-# ** Warning: (vsim-3015) adder.sv(13): [PCDPC] - Port size (1) does not match connection size (32) for port 'i_carry'. The port definition is at: adder.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /mux_accumulator_testbench/dut/adder/adder_final/generate_N_bit_Adder[0]/genblk1/f File: adder.sv
+# Loading work.encoding_testbench
+# Loading work.encoding
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: hax032  Hostname: DESKTOP-8CE0NHA  ProcessID: 2788
-#           Attempting to use alternate WLF file "./wlftsihjtv".
+#           Attempting to use alternate WLF file "./wlftz60hhq".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftsihjtv
+#           Using alternate file: ./wlftz60hhq
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./accumulator.sv(67)
-#    Time: 500 ps  Iteration: 1  Instance: /mux_accumulator_testbench
-# Break in Module mux_accumulator_testbench at ./accumulator.sv line 67
+# ** Note: $stop    : ./encoding_module.sv(81)
+#    Time: 400 ps  Iteration: 1  Instance: /encoding_testbench
+# Break in Module encoding_testbench at ./encoding_module.sv line 81
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {G:/My Drive/Research/HD_Accerlator_Reseach/Verilog/encoding_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:05:24 on Jul 31,2020
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# End time: 17:05:25 on Jul 31,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:05:25 on Jul 31,2020
+# vlog -reportprogress 300 ./pipelined_adder_tree.sv 
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# End time: 17:05:25 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:05:25 on Jul 31,2020
+# vlog -reportprogress 300 ./accumulator.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# 	mux_accumulator_testbench
+# End time: 17:05:26 on Jul 31,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:05:26 on Jul 31,2020
+# vlog -reportprogress 300 ./encoding_module.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# -- Compiling module encoding
+# -- Compiling module encoding_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# 	mux_accumulator_testbench
+# 	encoding_testbench
+# End time: 17:05:26 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:05:32 on Jul 31,2020, Elapsed time: 0:03:17
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work encoding_testbench 
+# Start time: 17:05:32 on Jul 31,2020
+# Loading sv_std.std
+# Loading work.encoding_testbench
+# Loading work.encoding
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hax032  Hostname: DESKTOP-8CE0NHA  ProcessID: 2788
+#           Attempting to use alternate WLF file "./wlftfz1s1h".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftfz1s1h
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./encoding_module.sv(86)
+#    Time: 400 ps  Iteration: 1  Instance: /encoding_testbench
+# Break in Module encoding_testbench at ./encoding_module.sv line 86
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {G:/My Drive/Research/HD_Accerlator_Reseach/Verilog/encoding_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:06:06 on Jul 31,2020
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# End time: 17:06:06 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:06:06 on Jul 31,2020
+# vlog -reportprogress 300 ./pipelined_adder_tree.sv 
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# End time: 17:06:07 on Jul 31,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:06:07 on Jul 31,2020
+# vlog -reportprogress 300 ./accumulator.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# 	mux_accumulator_testbench
+# End time: 17:06:07 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:06:07 on Jul 31,2020
+# vlog -reportprogress 300 ./encoding_module.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# -- Compiling module encoding
+# -- Compiling module encoding_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# 	mux_accumulator_testbench
+# 	encoding_testbench
+# End time: 17:06:08 on Jul 31,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:06:10 on Jul 31,2020, Elapsed time: 0:00:38
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work encoding_testbench 
+# Start time: 17:06:10 on Jul 31,2020
+# Loading sv_std.std
+# Loading work.encoding_testbench
+# Loading work.encoding
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hax032  Hostname: DESKTOP-8CE0NHA  ProcessID: 2788
+#           Attempting to use alternate WLF file "./wlftfc0e05".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftfc0e05
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./encoding_module.sv(86)
+#    Time: 400 ps  Iteration: 1  Instance: /encoding_testbench
+# Break in Module encoding_testbench at ./encoding_module.sv line 86
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:06:35 on Jul 31,2020
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# End time: 17:06:35 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:06:35 on Jul 31,2020
+# vlog -reportprogress 300 ./pipelined_adder_tree.sv 
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# End time: 17:06:36 on Jul 31,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:06:36 on Jul 31,2020
+# vlog -reportprogress 300 ./accumulator.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# 	mux_accumulator_testbench
+# End time: 17:06:36 on Jul 31,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:06:36 on Jul 31,2020
+# vlog -reportprogress 300 ./encoding_module.sv 
+# -- Compiling module mux_two_one
+# -- Compiling module N_bit_adder
+# -- Compiling module full_adder
+# -- Compiling module N_bit_adder_testbench
+# -- Compiling module pipelined_adder_tree
+# -- Compiling module pipelined_adder_tree_testbench
+# -- Compiling module mux_accumulator
+# -- Compiling module mux_accumulator_testbench
+# -- Compiling module encoding
+# -- Compiling module encoding_testbench
+# 
+# Top level modules:
+# 	N_bit_adder_testbench
+# 	pipelined_adder_tree_testbench
+# 	mux_accumulator_testbench
+# 	encoding_testbench
+# End time: 17:06:37 on Jul 31,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:06:38 on Jul 31,2020, Elapsed time: 0:00:28
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work encoding_testbench 
+# Start time: 17:06:38 on Jul 31,2020
+# Loading sv_std.std
+# Loading work.encoding_testbench
+# Loading work.encoding
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hax032  Hostname: DESKTOP-8CE0NHA  ProcessID: 2788
+#           Attempting to use alternate WLF file "./wlft9jat7g".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft9jat7g
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./encoding_module.sv(86)
+#    Time: 400 ps  Iteration: 1  Instance: /encoding_testbench
+# Break in Module encoding_testbench at ./encoding_module.sv line 86
