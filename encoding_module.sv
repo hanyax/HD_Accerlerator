@@ -1,13 +1,13 @@
 `include "accumulator.sv"
 
-module encoding #(parameter HVSIZE = 16, FTSIZE = 16, FTWIDTH = 8, FTTOTALSIZE = 4000) (out, done, clk, reset, projections, features);
-    output logic [HVSIZE-1:0][FTWIDTH-1:0] out; 
+module encoding #(parameter HVSIZE = 16, FTSIZE = 16, FTWIDTH = 8, DIM_WIDTH = 16, FTTOTALSIZE = 4000) (out, done, clk, reset, projections, features);
+    output logic [HVSIZE-1:0][DIM_WIDTH-1:0] out; 
     output logic done;
     input logic clk, reset;
     input logic [HVSIZE-1:0] projections;
     input logic [FTSIZE-1:0] [FTWIDTH-1:0] features;
 
-    logic [HVSIZE-1:0][FTWIDTH-1:0] out_temp;
+    logic [HVSIZE-1:0][DIM_WIDTH-1:0] out_temp;
     logic [HVSIZE-1:0][FTSIZE-1:0] proj_ins;
     shortint count;
 
@@ -36,7 +36,7 @@ module encoding #(parameter HVSIZE = 16, FTSIZE = 16, FTWIDTH = 8, FTTOTALSIZE =
     genvar i;
     generate
         for (i=0;i<HVSIZE;i++) begin
-            mux_accumulator adder_mod (.out(out_temp[i]), .clk, .features, .projections(proj_ins[i]), .prev_result(out_temp[i]));
+            mux_accumulator adder_mod (.out(out_temp[i]), .clk, .reset, .features, .projections(proj_ins[i]), .prev_result(out_temp[i]));
         end
     endgenerate
 
@@ -49,7 +49,7 @@ module encoding #(parameter HVSIZE = 16, FTSIZE = 16, FTWIDTH = 8, FTTOTALSIZE =
             count <= 0;
         end else begin
             count <= count + FTSIZE;
-            if (count >= FTTOTALSIZE) begin
+            if (count > FTTOTALSIZE) begin
                 done <= 1;
                 out <= out_temp;
             end
@@ -63,7 +63,7 @@ module encoding #(parameter HVSIZE = 16, FTSIZE = 16, FTWIDTH = 8, FTTOTALSIZE =
 endmodule
 
 module encoding_testbench;
-    logic [15:0] [7:0] out;
+    logic [15:0] [15:0] out;
     logic [15:0][7:0] features;
     logic [15:0] projections;
     logic clk, done, reset;
@@ -88,7 +88,7 @@ module encoding_testbench;
             features[i] <= 1;
         end; @(posedge clk);
         
-        repeat (250) begin
+        repeat (251) begin
             @(posedge clk);
         end
 

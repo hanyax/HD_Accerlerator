@@ -12,11 +12,19 @@ vlog "./encoding_module.sv"
 # Call vsim to invoke simulator
 #     Make sure the last item on the line is the name of the
 #     testbench module you want to execute.
+
+#vsim -voptargs="+acc" -t 1ps -lib work N_bit_adder_testbench
+#vsim -voptargs="+acc" -t 1ps -lib work pipelined_adder_tree_testbench
+#vsim -voptargs="+acc" -t 1ps -lib work mux_accumulator_testbench
 vsim -voptargs="+acc" -t 1ps -lib work encoding_testbench
 
 # Source the wave do file
 #     This should be the file that sets up the signal window for
 #     the module you are testing.
+
+#do N_bit_adder_wave.do
+#do pipelined_adder_tree_wave.do
+#do mux_accumulator_wave.do
 do encoding_wave.do
 
 # Set the window types

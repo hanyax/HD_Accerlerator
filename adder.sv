@@ -43,9 +43,9 @@ module N_bit_adder_testbench;
 
  initial begin
   // Initialize Inputs
-  input1 = 64; input2 = 64; #10;
+  input1 = 10; input2 = -10; #10;
   // Add stimulus here
-  input1 = 65; input2 = 66; #100;
+  input1 = 65; input2 = 66; #10;
 
  end
       
