@@ -8,35 +8,35 @@ z2
 !i10f 100
 cModel Technology
 Z0 dG:/My Drive/Research/HD_Accerlator_Reseach/Verilog
-vencoding
+vcontroller
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1596318741
+Z2 !s110 1598568476
 !i10b 1
-!s100 z]M`0HRKZB9m1cn^YDU8:0
-IzTgVbeR2MiZ][o<=bBk:N1
+!s100 g2hl@MCkGglYMM8X`ZDHD0
+I]o7RfkWUMc5PRRLflO2_:1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
-Z4 !s105 encoding_module_sv_unit
+Z4 !s105 controller_sv_unit
 S1
 R0
-Z5 w1596318734
-Z6 8./encoding_module.sv
-Z7 F./encoding_module.sv
-L0 3
+Z5 w1598568467
+Z6 8./controller.sv
+Z7 F./controller.sv
+L0 4
 Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1596318741.000000
-Z10 !s107 adder.sv|pipelined_adder_tree.sv|two_to_one_mux.sv|accumulator.sv|./encoding_module.sv|
-Z11 !s90 -reportprogress|300|./encoding_module.sv|
+Z9 !s108 1598568475.000000
+Z10 !s107 adder.sv|pipelined_adder_tree.sv|two_to_one_mux.sv|accumulator.sv|encoding_module.sv|./controller.sv|
+Z11 !s90 -reportprogress|300|./controller.sv|
 !i113 1
 Z12 tCvgOpt 0
-vencoding_testbench
+vcontroller_testbench
 R1
-!s110 1596318742
+R2
 !i10b 1
-!s100 nOiY5j1fHK9=B27L:8J_o2
-I<HRi]f5B4]]NnLMF@oDJJ1
+!s100 N@og7dV<N;U;HYTBDMKSE3
+IZ9fHL:VhD7o3Adb0Oa7P=3
 R3
 R4
 S1
@@ -44,7 +44,53 @@ R0
 R5
 R6
 R7
-L0 65
+L0 53
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+vencoding
+R1
+R2
+!i10b 1
+!s100 1Z1>NzA7W`moNERl2<KVR0
+I2@0alHe^FeeD8GaomINdm3
+R3
+R4
+S1
+R0
+Z13 w1598556100
+Z14 8encoding_module.sv
+Z15 Fencoding_module.sv
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+vencoding_testbench
+R1
+R2
+!i10b 1
+!s100 Y@596LR:UQlQdcj=]AV7=2
+Ih58AmmIFCeECG4D;7<akA1
+R3
+R4
+S1
+R0
+R13
+R14
+R15
+L0 43
 R8
 r1
 !s85 0
@@ -56,7 +102,7 @@ R11
 R12
 vfull_adder
 R1
-R2
+Z16 !s110 1598568475
 !i10b 1
 !s100 51OA59GhV5iOFVV5h8J@I1
 IKO6:5C=IjBN9@1:?FigHn3
@@ -64,9 +110,9 @@ R3
 R4
 S1
 R0
-Z13 w1596313877
-Z14 8adder.sv
-Z15 Fadder.sv
+Z17 w1596313877
+Z18 8adder.sv
+Z19 Fadder.sv
 L0 21
 R8
 r1
@@ -87,9 +133,9 @@ R3
 R4
 S1
 R0
-Z16 w1596315154
-Z17 8accumulator.sv
-Z18 Faccumulator.sv
+Z20 w1596315154
+Z21 8accumulator.sv
+Z22 Faccumulator.sv
 L0 4
 R8
 r1
@@ -110,9 +156,9 @@ R3
 R4
 S1
 R0
-R16
-R17
-R18
+R20
+R21
+R22
 L0 26
 R8
 r1
@@ -125,7 +171,7 @@ R11
 R12
 vmux_two_one
 R1
-R2
+R16
 !i10b 1
 !s100 HzdE<<iO[cCTQL1jaBeGK1
 IA2<69ZAJP@7HbQ5[:V7Lf1
@@ -148,7 +194,7 @@ R11
 R12
 vN_bit_adder
 R1
-R2
+R16
 !i10b 1
 !s100 DhjD<0^;IXe_R;a:_b0K82
 Ina0=lHTOS:Qa<=;7@A9[_3
@@ -156,9 +202,9 @@ R3
 R4
 S1
 R0
-R13
-R14
-R15
+R17
+R18
+R19
 L0 3
 R8
 r1
@@ -180,9 +226,9 @@ R3
 R4
 S1
 R0
-R13
-R14
-R15
+R17
+R18
+R19
 L0 30
 R8
 r1
@@ -204,9 +250,9 @@ R3
 R4
 S1
 R0
-Z19 w1596318368
-Z20 8pipelined_adder_tree.sv
-Z21 Fpipelined_adder_tree.sv
+Z23 w1596318368
+Z24 8pipelined_adder_tree.sv
+Z25 Fpipelined_adder_tree.sv
 L0 5
 R8
 r1
@@ -227,9 +273,9 @@ R3
 R4
 S1
 R0
-R19
-R20
-R21
+R23
+R24
+R25
 L0 81
 R8
 r1
