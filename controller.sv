@@ -1,5 +1,3 @@
-`include "encoding_module.sv"
-
 // n is the feature size for each hardware MAC, m is the hyperparam produced by each hardware MAC
 module controller #(parameter Dhv_SIZE = 4000, Div_SIZE = 512, N_SIZE = 16, M_SIZE = 16, FTWIDTH = 8) (out_projections, out_features, out_done, out_reset, projections, features, done, clk, reset_in);
     output logic [N_SIZE+M_SIZE-1:0] out_projections; 
