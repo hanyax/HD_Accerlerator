@@ -8,7 +8,12 @@ vlog "./adder.sv"
 vlog "./pipelined_adder_tree.sv"
 vlog "./accumulator.sv"
 vlog "./encoding_module.sv"
-vlog "./controller.sv"
+vlog "./encoding_controller.sv"
+vlog "./memory_single.sv"
+vlog "./memory_double.sv"
+vlog "./projection_mem_interface.sv"
+vlog "./feature_mem_interface.sv"
+vlog "./class_mem_interface.sv"
 vlog "./accelerator_top.sv"
 
 # Call vsim to invoke simulator
@@ -20,6 +25,9 @@ vlog "./accelerator_top.sv"
 #vsim -voptargs="+acc" -t 1ps -lib work mux_accumulator_testbench
 #vsim -voptargs="+acc" -t 1ps -lib work encoding_testbench
 #vsim -voptargs="+acc" -t 1ps -lib work controller_testbench
+#vsim -voptargs="+acc" -t 1ps -lib work projection_mem_interface_testbench
+#vsim -voptargs="+acc" -t 1ps -lib work feature_mem_interface_testbench
+#vsim -voptargs="+acc" -t 1ps -lib work class_mem_interface_testbench
 vsim -voptargs="+acc" -t 1ps -lib work accelerator_top_testbench
 
 # Source the wave do file
@@ -31,8 +39,10 @@ vsim -voptargs="+acc" -t 1ps -lib work accelerator_top_testbench
 #do mux_accumulator_wave.do
 #do encoding_wave.do
 #do controller_wave.do
+#do projection_mem_interface_wave.do
+#do feature_mem_interface_wave.do
+#do class_mem_interface_wave.do
 do accelerator_top_wave.do
-
 
 # Set the window types
 view wave
