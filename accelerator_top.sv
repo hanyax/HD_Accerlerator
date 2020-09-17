@@ -47,7 +47,7 @@ module accelerator_top #(parameter Dhv_SIZE = 4000, Div_SIZE = 512, N_SIZE = 16,
     
     //similarity_checker check();
     logic read_class_done;
-    class_mem_interface class_mem (.clk, .reset, .class_in, .read_address(class_addrs), .we(class_write & !all_write_done), .re(all_write_done), .class_num(26), .class_out, .write_done(class_write_done)); 
+    class_mem_interface class_mem (.clk, .reset, .class_in, .read_address(class_addrs), .we(class_write & !all_write_done), .re(all_write_done), .class_out, .write_done(class_write_done)); 
     class_checking_controller class_check_control (.clk, .reset_in(reset), .write_data_done(all_write_done), .cur_encode_done(mac_done), .class_num(26), .class_addrs, .reset_out(reset_checker), .out_done(read_class_done));
     similarity_checker similarity_check (.encode_vector_in(encoding_out), .class_in(class_out), .coeffs_in, .clk, .reset, .cur_encode_done(mac_done), .read_class_done, .we(class_write & !all_write_done), .max_val, .max_index, .done(all_done));
 

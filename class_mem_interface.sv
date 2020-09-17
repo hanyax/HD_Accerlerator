@@ -1,10 +1,9 @@
 `include "memory_single.sv"
 
-module class_mem_interface #(Div_SIZE = 512, FTWIDTH = 8, M_SIZE = 16, ADDR_WIDTH = 13) (clk, reset, class_in, read_address, we, re, class_num, class_out, write_done); 
+module class_mem_interface #(Div_SIZE = 512, FTWIDTH = 8, M_SIZE = 16, ADDR_WIDTH = 13) (clk, reset, class_in, read_address, we, re, class_out, write_done); 
     input logic [FTWIDTH-1:0] class_in;
     input logic [ADDR_WIDTH-1:0] read_address;
     input logic clk, reset, we, re;
-    input logic [4:0] class_num;
  
     output logic write_done;
     output logic [M_SIZE - 1:0][FTWIDTH-1:0] class_out;
@@ -150,7 +149,7 @@ module class_mem_interface_testbench;
 
     parameter period = 100;
 
-    class_mem_interface dut (.clk, .reset, .class_in, .read_address, .we, .re, .class_num(26), .class_out, .write_done); 
+    class_mem_interface dut (.clk, .reset, .class_in, .read_address, .we, .re, .class_out, .write_done); 
 
     initial begin
         clk <= 1;
