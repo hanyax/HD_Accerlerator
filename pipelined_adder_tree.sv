@@ -44,7 +44,7 @@ module pipelined_adder_tree #(parameter INPUT_WIDTH = 8, DIM_WIDTH = 16, FTSIZE 
         end
         */
 
-        for(i=0; i<16; i+=2) begin : third_results
+        for(i=0; i<4; i+=2) begin : third_results
             N_bit_adder #(16) adder (.input1(second_inter[i]),.input2(second_inter[i+1]),.out(third_inter[i/2]));
         end
     endgenerate
