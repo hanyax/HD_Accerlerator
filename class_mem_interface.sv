@@ -1,17 +1,17 @@
 `include "memory_single.sv"
 
-module class_mem_interface #(Div_SIZE = 512, FTWIDTH = 8, N_SIZE = 16, ADDR_WIDTH = 13) (clk, reset, class_in, read_address, we, re, class_num, class_out, write_done); 
+module class_mem_interface #(Div_SIZE = 512, FTWIDTH = 8, M_SIZE = 16, ADDR_WIDTH = 13) (clk, reset, class_in, read_address, we, re, class_num, class_out, write_done); 
     input logic [FTWIDTH-1:0] class_in;
     input logic [ADDR_WIDTH-1:0] read_address;
     input logic clk, reset, we, re;
     input logic [4:0] class_num;
  
     output logic write_done;
-    output logic [N_SIZE - 1:0][FTWIDTH-1:0] class_out;
+    output logic [M_SIZE - 1:0][FTWIDTH-1:0] class_out;
 
     shortint write_address;
     int address_in;
-    shortint total_count_write;
+    int total_count_write;
     logic we0, we1, we2, we3, we4, we5, we6, we7, we8, we9, we10, we11, we12, we13, we14, we15;
     logic [3:0] i;
 
@@ -135,7 +135,7 @@ module class_mem_interface #(Div_SIZE = 512, FTWIDTH = 8, N_SIZE = 16, ADDR_WIDT
             end
         end
 
-        if (total_count_write >= Div_SIZE * class_num) begin
+        if (total_count_write >= 104000) begin // 4000 * 26
             write_done <= 1;
         end
     end
@@ -144,17 +144,13 @@ endmodule
 
 module class_mem_interface_testbench; 
     logic [7:0] class_in;
-    logic [10:0] read_address;
+    logic [12:0] read_address;
     logic [15:0][7:0] class_out;
     logic clk, reset, write_done, we, re;
 
-    logic [4:0] class_num;
-
-    assign class_num = 26;
-
     parameter period = 100;
 
-    class_mem_interface dut (.clk, .reset, .class_in, .read_address, .we, .re, .class_num, .class_out, .write_done); 
+    class_mem_interface dut (.clk, .reset, .class_in, .read_address, .we, .re, .class_num(26), .class_out, .write_done); 
 
     initial begin
         clk <= 1;
@@ -165,8 +161,8 @@ module class_mem_interface_testbench;
         reset <= 1; re <= 0; @(posedge clk); 
         reset <= 0; we <= 1; @(posedge clk);
 
-        for (int i = 0; i < 13312; i++) begin
-            class_in <= i; @(posedge clk);
+        for (int i = 0; i < 104000; i++) begin
+            class_in <= 1; @(posedge clk);
         end; 
 
         @(posedge clk);
@@ -175,7 +171,7 @@ module class_mem_interface_testbench;
 
         we <= 0; re <= 1; @(posedge clk);
 
-        for (int i = 0; i < 129; i++) begin
+        for (int i = 0; i < 6500; i++) begin
             read_address <= i; @(posedge clk);
         end; 
 

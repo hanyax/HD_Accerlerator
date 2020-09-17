@@ -10,15 +10,15 @@ cModel Technology
 Z0 dG:/My Drive/Research/HD_Accerlator_Reseach/Verilog
 vaccelerator_top
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1600155349
+Z2 !s110 1600324827
 !i10b 1
-!s100 4LOmzDB?EbmL=h4Y4>5k82
-IFJ?Be1gO_T79A@PU5k;bI3
+!s100 k0OYaj=IZ^`@Ij?K^VT7?1
+I@h>C5z_I:H7B42cL81Lcj2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 Z4 !s105 accelerator_top_sv_unit
 S1
 R0
-Z5 w1600155056
+Z5 w1600324808
 Z6 8./accelerator_top.sv
 Z7 F./accelerator_top.sv
 L0 4
@@ -26,7 +26,7 @@ Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1600155348.000000
+Z9 !s108 1600324825.000000
 Z10 !s107 encoding_controller.sv|adder.sv|pipelined_adder_tree.sv|two_to_one_mux.sv|accumulator.sv|encoding_module.sv|./accelerator_top.sv|
 Z11 !s90 -reportprogress|300|./accelerator_top.sv|
 !i113 1
@@ -35,8 +35,8 @@ vaccelerator_top_testbench
 R1
 R2
 !i10b 1
-!s100 llJ>GDKJW;QYRf[:77iN33
-I18zFaFD;`kYUVonIQgG?m2
+!s100 =U;9S_]T2d@8?I3KAn9em2
+IT0lPa9X0;N@SHX=g[MbBi0
 R3
 R4
 S1
@@ -44,7 +44,7 @@ R0
 R5
 R6
 R7
-L0 52
+L0 57
 R8
 r1
 !s85 0
@@ -54,35 +54,35 @@ R10
 R11
 !i113 1
 R12
-vclass_mem_interface
+vclass_checking_controller
 R1
-Z13 !s110 1600155348
+Z13 !s110 1600324824
 !i10b 1
-!s100 Ea<MkOnV81?5R;m_dNk8G3
-IMj^7DPZK`dP_<QH;iiXlG0
+!s100 ?MAVZ@`JIQfhm]iamjNR01
+ITE95@gI4H]ch5Si?m=Z<L0
 R3
-Z14 !s105 class_mem_interface_sv_unit
+Z14 !s105 class_checking_controller_sv_unit
 S1
 R0
-Z15 w1600144345
-Z16 8./class_mem_interface.sv
-Z17 F./class_mem_interface.sv
-L0 3
+Z15 w1600241626
+Z16 8./class_checking_controller.sv
+Z17 F./class_checking_controller.sv
+L0 1
 R8
 r1
 !s85 0
 31
-Z18 !s108 1600155347.000000
-Z19 !s107 memory_single.sv|./class_mem_interface.sv|
-Z20 !s90 -reportprogress|300|./class_mem_interface.sv|
+Z18 !s108 1600324824.000000
+Z19 !s107 ./class_checking_controller.sv|
+Z20 !s90 -reportprogress|300|./class_checking_controller.sv|
 !i113 1
 R12
-vclass_mem_interface_testbench
+vclass_checking_controller_testbench
 R1
 R13
 !i10b 1
-!s100 EidGeCOEC]K8`WO_:?ddN3
-ILT75e_@NVciXLUDcZO82a0
+!s100 ga=nP^d2iV>;?WcTPJZG83
+I9O09Hl_8?9i4jEnFIYXeL1
 R3
 R14
 S1
@@ -90,7 +90,7 @@ R0
 R15
 R16
 R17
-L0 145
+L0 53
 R8
 r1
 !s85 0
@@ -98,6 +98,52 @@ r1
 R18
 R19
 R20
+!i113 1
+R12
+vclass_mem_interface
+R1
+R13
+!i10b 1
+!s100 a@0N0izn>L_4E@a4LffZb0
+Ik8:BRgcEdaeJolRC^hJM@2
+R3
+Z21 !s105 class_mem_interface_sv_unit
+S1
+R0
+Z22 w1600237347
+Z23 8./class_mem_interface.sv
+Z24 F./class_mem_interface.sv
+L0 3
+R8
+r1
+!s85 0
+31
+Z25 !s108 1600324823.000000
+Z26 !s107 memory_single.sv|./class_mem_interface.sv|
+Z27 !s90 -reportprogress|300|./class_mem_interface.sv|
+!i113 1
+R12
+vclass_mem_interface_testbench
+R1
+R13
+!i10b 1
+!s100 ag9?LLBN`BO]TiQi]A2gd0
+I>^_b;Nd8X36GgiBLXeVAF3
+R3
+R21
+S1
+R0
+R22
+R23
+R24
+L0 145
+R8
+r1
+!s85 0
+31
+R25
+R26
+R27
 !i113 1
 R12
 vcontroller
@@ -125,23 +171,23 @@ R11
 R12
 vcontroller_testbench
 R1
-R2
+!s110 1600195051
 !i10b 1
-!s100 mnHkS7dK9:;3a9JXTKR483
-I1WA^aLX;oa4SF;O>X=FFi3
+!s100 AW=<<7QXGUDjQOA5:2X0g2
+I:HDzMoe^b>2kD0Z8@WS>c0
 R3
 R4
 S1
 R0
-Z21 w1600154967
-Z22 8encoding_controller.sv
-Z23 Fencoding_controller.sv
-L0 131
+w1600194279
+Z28 8encoding_controller.sv
+Z29 Fencoding_controller.sv
+Z30 L0 104
 R8
 r1
 !s85 0
 31
-R9
+!s108 1600195050.000000
 R10
 R11
 !i113 1
@@ -150,15 +196,15 @@ vencoding
 R1
 R2
 !i10b 1
-!s100 1Z1>NzA7W`moNERl2<KVR0
-I2@0alHe^FeeD8GaomINdm3
+!s100 a2n0iRL^Mfk=`<XOOH7bM2
+IB7;S>BWbX];h5@0;QBdze0
 R3
 R4
 S1
 R0
-Z24 w1598579053
-Z25 8encoding_module.sv
-Z26 Fencoding_module.sv
+Z31 w1600324100
+Z32 8encoding_module.sv
+Z33 Fencoding_module.sv
 L0 3
 R8
 r1
@@ -173,16 +219,39 @@ vencoding_controller
 R1
 R2
 !i10b 1
-!s100 C4<GJOPZfUZQjg_@YR`]H2
-IF9kmM5TD1SJ267e:C@@7C2
+!s100 >a;E1RH^4Y0^kKT^aPfRE0
+IXYB_lOmfzj4FaRh_W=CV30
 R3
 R4
 S1
 R0
-R21
-R22
-R23
+Z34 w1600198377
+R28
+R29
 L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+vencoding_controller_testbench
+R1
+R2
+!i10b 1
+!s100 `FbCQ5FIjkGV8aEj:AL651
+IK9DPzOMlInm]Nf;0Ug_Mf1
+R3
+R4
+S1
+R0
+R34
+R28
+R29
+R30
 R8
 r1
 !s85 0
@@ -196,15 +265,15 @@ vencoding_testbench
 R1
 R2
 !i10b 1
-!s100 Y@596LR:UQlQdcj=]AV7=2
-Ih58AmmIFCeECG4D;7<akA1
+!s100 =cFAiEez^IVzG;?]UH2]F2
+I:N5GfDaQbPAKFeWcLgj4E2
 R3
 R4
 S1
 R0
-R24
-R25
-R26
+R31
+R32
+R33
 L0 43
 R8
 r1
@@ -217,53 +286,53 @@ R11
 R12
 vfeature_mem_interface
 R1
-Z27 !s110 1600155347
+Z35 !s110 1600324823
 !i10b 1
 !s100 z6J7=5GP@QUK^O4M70P[B0
 Ih0e@B>lXSCaf=WT9:4c9_0
 R3
-Z28 !s105 feature_mem_interface_sv_unit
+Z36 !s105 feature_mem_interface_sv_unit
 S1
 R0
-Z29 w1600149765
-Z30 8./feature_mem_interface.sv
-Z31 F./feature_mem_interface.sv
+Z37 w1600149765
+Z38 8./feature_mem_interface.sv
+Z39 F./feature_mem_interface.sv
 L0 3
 R8
 r1
 !s85 0
 31
-Z32 !s108 1600155346.000000
-Z33 !s107 memory_single.sv|./feature_mem_interface.sv|
-Z34 !s90 -reportprogress|300|./feature_mem_interface.sv|
+Z40 !s108 1600324822.000000
+Z41 !s107 memory_single.sv|./feature_mem_interface.sv|
+Z42 !s90 -reportprogress|300|./feature_mem_interface.sv|
 !i113 1
 R12
 vfeature_mem_interface_testbench
 R1
-R27
+R35
 !i10b 1
 !s100 i9zYjN4AXiHLI2kjK9SRn2
 IL8bzHWfK0bVIRZ0jC<4^93
 R3
-R28
+R36
 S1
 R0
-R29
-R30
-R31
+R37
+R38
+R39
 L0 68
 R8
 r1
 !s85 0
 31
-R32
-R33
-R34
+R40
+R41
+R42
 !i113 1
 R12
 vfull_adder
 R1
-R13
+R2
 !i10b 1
 !s100 51OA59GhV5iOFVV5h8J@I1
 IKO6:5C=IjBN9@1:?FigHn3
@@ -271,9 +340,9 @@ R3
 R4
 S1
 R0
-Z35 w1596313877
-Z36 8adder.sv
-Z37 Fadder.sv
+Z43 w1596313877
+Z44 8adder.sv
+Z45 Fadder.sv
 L0 21
 R8
 r1
@@ -291,30 +360,30 @@ R1
 !s100 O7zJjz97nfJeUQo<TEz<e1
 Io4d?Hl]O6HdFPGjUA<Aa:2
 R3
-Z38 !s105 projection_mem_interface_sv_unit
+Z46 !s105 projection_mem_interface_sv_unit
 S1
 R0
 w1599969470
-Z39 8memory.sv
-Z40 Fmemory.sv
+Z47 8memory.sv
+Z48 Fmemory.sv
 L0 7
 R8
 r1
 !s85 0
 31
 !s108 1599971269.000000
-Z41 !s107 memory.sv|./projection_mem_interface.sv|
-Z42 !s90 -reportprogress|300|./projection_mem_interface.sv|
+Z49 !s107 memory.sv|./projection_mem_interface.sv|
+Z50 !s90 -reportprogress|300|./projection_mem_interface.sv|
 !i113 1
 R12
 vmemory_double
 R1
-Z43 !s110 1600155346
+Z51 !s110 1600324822
 !i10b 1
 !s100 zJX<?^O7fc<z1Tb5`7_Ho3
 Ilig9_j[cS[?@2R8SRNk0:1
 R3
-R38
+R46
 S1
 R0
 w1599972236
@@ -325,22 +394,22 @@ R8
 r1
 !s85 0
 31
-R32
-Z44 !s107 memory_double.sv|./projection_mem_interface.sv|
-R42
+Z52 !s108 1600324821.000000
+Z53 !s107 memory_double.sv|./projection_mem_interface.sv|
+R50
 !i113 1
 R12
 vmemory_single
 R1
 R13
 !i10b 1
-!s100 c]j:^a7B@d9[NFoJlVYjS1
-IkWd1i;HNe?XlU>]PXiZWP3
+!s100 LH0k:Z2PYMXGKIm7Xke5H1
+IAacDl]G;VXlA0_IXXjT4<3
 R3
-R14
+R21
 S1
 R0
-w1599972406
+w1600320018
 8memory_single.sv
 Fmemory_single.sv
 L0 7
@@ -348,9 +417,9 @@ R8
 r1
 !s85 0
 31
-R18
-R19
-R20
+R25
+R26
+R27
 !i113 1
 R12
 vmux_accumulator
@@ -363,9 +432,9 @@ R3
 R4
 S1
 R0
-Z45 w1596315154
-Z46 8accumulator.sv
-Z47 Faccumulator.sv
+Z54 w1596315154
+Z55 8accumulator.sv
+Z56 Faccumulator.sv
 L0 4
 R8
 r1
@@ -386,9 +455,9 @@ R3
 R4
 S1
 R0
-R45
-R46
-R47
+R54
+R55
+R56
 L0 26
 R8
 r1
@@ -401,7 +470,7 @@ R11
 R12
 vmux_two_one
 R1
-R13
+!s110 1600324826
 !i10b 1
 !s100 HzdE<<iO[cCTQL1jaBeGK1
 IA2<69ZAJP@7HbQ5[:V7Lf1
@@ -424,7 +493,7 @@ R11
 R12
 vN_bit_adder
 R1
-R13
+R2
 !i10b 1
 !s100 DhjD<0^;IXe_R;a:_b0K82
 Ina0=lHTOS:Qa<=;7@A9[_3
@@ -432,9 +501,9 @@ R3
 R4
 S1
 R0
-R35
-R36
-R37
+R43
+R44
+R45
 L0 3
 R8
 r1
@@ -448,7 +517,7 @@ R12
 n@n_bit_adder
 vN_bit_adder_testbench
 R1
-R13
+R2
 !i10b 1
 !s100 IP92kUJAQjlfgSSBB<S6D3
 IdQCZ9BP4cncocC=U8BL@Q3
@@ -456,9 +525,9 @@ R3
 R4
 S1
 R0
-R35
-R36
-R37
+R43
+R44
+R45
 L0 30
 R8
 r1
@@ -472,17 +541,17 @@ R12
 n@n_bit_adder_testbench
 vpipelined_adder_tree
 R1
-R13
+R2
 !i10b 1
-!s100 ai5_gOlCKBR9bC9?S_9bP0
-Ikm>l0CGQlWfacTM[;EJQ23
+!s100 L@W@@GbRSY;>UYK8NF9j71
+IghKN?X2DzU>?o]@5hEOMR3
 R3
 R4
 S1
 R0
-Z48 w1596318368
-Z49 8pipelined_adder_tree.sv
-Z50 Fpipelined_adder_tree.sv
+Z57 w1600313855
+Z58 8pipelined_adder_tree.sv
+Z59 Fpipelined_adder_tree.sv
 L0 5
 R8
 r1
@@ -497,16 +566,16 @@ vpipelined_adder_tree_testbench
 R1
 R2
 !i10b 1
-!s100 U0`VAmPA5?`GRC5HRd`SF3
-I4BPM01lIQ7VL;JEINFlC33
+!s100 hi_YmLhh>DfP_c4]A3Z=B0
+IAnO?>CDc@2BFo?nAlGd:P2
 R3
 R4
 S1
 R0
-R48
-R49
-R50
-L0 81
+R57
+R58
+R59
+L0 82
 R8
 r1
 !s85 0
@@ -518,48 +587,48 @@ R11
 R12
 vprojection_mem_interface
 R1
-R43
+R51
 !i10b 1
-!s100 ke2B;1I<AnG@2[]:UML:c1
-I3LFUNbojh=QR:B8^ZXL2P2
+!s100 P=SPIHU;Zoo^T;T@5`TAI0
+In0c5PO:T?M4QYe_6IUL4X0
 R3
-R38
+R46
 S1
 R0
-Z51 w1600150155
-Z52 8./projection_mem_interface.sv
-Z53 F./projection_mem_interface.sv
+Z60 w1600319704
+Z61 8./projection_mem_interface.sv
+Z62 F./projection_mem_interface.sv
 L0 3
 R8
 r1
 !s85 0
 31
-R32
-R44
-R42
+R52
+R53
+R50
 !i113 1
 R12
 vprojection_mem_interface_testbench
 R1
-R43
+R51
 !i10b 1
-!s100 P41ZfDMN`3j7]>`oQe5X^2
-I]8W3PO0DR^Zg1824g443F0
+!s100 gNcI^dZ`egcjAXdXd3YdP1
+IaSMNlT^ERGa=d`H:n?NoJ1
 R3
-R38
+R46
 S1
 R0
-R51
-R52
-R53
-L0 44
+R60
+R61
+R62
+L0 42
 R8
 r1
 !s85 0
 31
-R32
-R44
-R42
+R52
+R53
+R50
 !i113 1
 R12
 vram_dp_sr_sw
@@ -569,19 +638,65 @@ R1
 !s100 gJBUU2?dCJ8V3NkJQL[]<0
 IZY[WacS^T<YDcGXVP^7Y50
 R3
-R38
+R46
 S1
 R0
 w1599968195
-R39
-R40
+R47
+R48
 L0 7
 R8
 r1
 !s85 0
 31
 !s108 1599968412.000000
-R41
-R42
+R49
+R50
+!i113 1
+R12
+vsimilarity_checker
+R1
+Z63 !s110 1600324825
+!i10b 1
+!s100 1]nTVPe4dQWJgOdKaV5Qb1
+IT@DTeGCNK;n[H<22ePIRW0
+R3
+Z64 !s105 similarity_checker_sv_unit
+S1
+R0
+Z65 w1600313937
+Z66 8./similarity_checker.sv
+Z67 F./similarity_checker.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+Z68 !s107 ./similarity_checker.sv|
+Z69 !s90 -reportprogress|300|./similarity_checker.sv|
+!i113 1
+R12
+vsimilarity_checker_testbench
+R1
+R63
+!i10b 1
+!s100 >laG0Pc@Y_MdMNc`FfMnh1
+I?`BkInS8OA@@U7S1Y5HC63
+R3
+R64
+S1
+R0
+R65
+R66
+R67
+L0 86
+R8
+r1
+!s85 0
+31
+R9
+R68
+R69
 !i113 1
 R12

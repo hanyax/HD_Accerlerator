@@ -7,7 +7,7 @@ module projection_mem_interface #(parameter Dhv_SIZE = 4000, IN_WIDTH = 16, ADDR
 
     output logic write_done;
     output logic [IN_WIDTH-1:0] out0, out1;
-    byte write_address, address_0_in, address_1_in;
+    shortint write_address, address_0_in, address_1_in;
 
     memory_double ram (.clk, .address_0(address_0_in), .data_0_in(proj_ins[0]), .data_0_out(out0), .cs_0(1'b1), .we_0(we & (!write_done)), .oe_0(re), 
     .address_1(address_1_in), .data_1_in(proj_ins[1]), .data_1_out(out1), .cs_1(1'b1), .we_1(we & (!write_done)), .oe_1(re)); 
@@ -26,11 +26,9 @@ module projection_mem_interface #(parameter Dhv_SIZE = 4000, IN_WIDTH = 16, ADDR
         if (reset) begin
             write_done <= 0;
             write_address <= 0;
-            out0 <= 0;
-            out1 <= 0;
         end else begin
             if (we) begin
-                if (write_address >= (Dhv_SIZE/(IN_WIDTH*2)-2)) begin 
+                if (write_address >= (Dhv_SIZE/IN_WIDTH)-2) begin 
                     write_done <= 1;
                 end else begin 
                     write_address <= write_address + 2;
@@ -59,7 +57,7 @@ module projection_mem_interface_testbench;
     initial begin
         reset <= 1; @(posedge clk);
 
-        for (int i = 0; i < 130; i+=2) begin
+        for (int i = 0; i < 250; i+=2) begin
             reset <= 0; we <= 1; proj_ins[0] <= i; proj_ins[1] <= i+1;  @(posedge clk);
         end; 
 
@@ -67,7 +65,6 @@ module projection_mem_interface_testbench;
         @(posedge clk);
         @(posedge clk);
 
-        
         we <= 0; re <= 1; @(posedge clk);
 
         for (int i = 0; i < 130; i+=2) begin

@@ -1,11 +1,12 @@
 // n is the feature size for each hardware MAC, m is the hyperparam produced by each hardware MAC
-module encoding_controller #(parameter Dhv_SIZE = 4000, Div_SIZE = 512, PROJ_ADDR_WIDTH = 8, PROJ_OUT_WIDTH = 16, FEA_ADDR_WIDTH = 8, CLA_ADDR_WIDTH = 13) (projection_addrs, feature_addrs, out_done, out_reset, cur_encode_done, clk, reset_in, write_data_done);
+module encoding_controller #(parameter Dhv_SIZE = 4000, Div_SIZE = 512, PROJ_ADDR_WIDTH = 8, PROJ_OUT_WIDTH = 16, FEA_ADDR_WIDTH = 8) (projection_addrs, feature_addrs, out_done, out_reset, cur_encode_done, clk, reset_in, write_data_done);
     
     output logic [1:0][PROJ_ADDR_WIDTH-1:0] projection_addrs; 
     output logic [FEA_ADDR_WIDTH-1:0] feature_addrs;
     output logic out_done, out_reset;
     input logic clk, cur_encode_done, reset_in, write_data_done;
 
+    shortint encoding_cycle_count;
 
     // 4000 projections
     shortint vertical_projection_mem_loc, horizontal_projection_mem_loc, max_horizontal_projection_mem_loc, bound, addr_after_bound;
@@ -100,7 +101,7 @@ module encoding_controller #(parameter Dhv_SIZE = 4000, Div_SIZE = 512, PROJ_ADD
     end
 endmodule
 
-module controller_testbench;
+module encoding_controller_testbench;
     logic [1:0][7:0] projection_addrs;
     logic [7:0] feature_addrs;
     logic [12:0] class_addrs;
@@ -109,7 +110,7 @@ module controller_testbench;
 
     parameter period = 100;
 
-    controller dut (.projection_addrs, .feature_addrs, .out_done, .out_reset, .cur_encode_done, .clk, .reset_in, .write_data_done);
+    encoding_controller dut (.projection_addrs, .feature_addrs, .out_done, .out_reset, .cur_encode_done, .clk, .reset_in, .write_data_done);
 
     initial begin
         clk <= 1;

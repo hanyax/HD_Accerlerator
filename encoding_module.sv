@@ -5,7 +5,7 @@ module encoding #(parameter M_SIZE = 16, N_SIZE = 16, FTWIDTH = 8, DIM_WIDTH = 1
     output logic done;
     input logic clk, reset;
     input logic [M_SIZE+N_SIZE-1:0] projections;
-    input logic [N_SIZE-1:0] [FTWIDTH-1:0] features;
+    input logic [M_SIZE-1:0] [FTWIDTH-1:0] features;
 
     logic [M_SIZE-1:0][DIM_WIDTH-1:0] out_temp;
     shortint count;
@@ -13,7 +13,7 @@ module encoding #(parameter M_SIZE = 16, N_SIZE = 16, FTWIDTH = 8, DIM_WIDTH = 1
     genvar i;
     generate
         for (i=0;i<M_SIZE;i++) begin
-            mux_accumulator adder_mod (.out(out_temp[i]), .clk, .reset, .features, .projections(projections[i+N_SIZE:i]), .prev_result(out_temp[i]));
+            mux_accumulator adder_mod (.out(out_temp[i]), .clk, .reset, .features, .projections(projections[i+N_SIZE-1:i]), .prev_result(out_temp[i]));
         end
     endgenerate
 
@@ -25,19 +25,19 @@ module encoding #(parameter M_SIZE = 16, N_SIZE = 16, FTWIDTH = 8, DIM_WIDTH = 1
             done <= 0;
             count <= 0;
         end else begin
-            count <= count + N_SIZE;
-            if (count > Div_SIZE) begin
-                done <= 1;
-                out <= out_temp;
-            end
             if (done) begin 
                 out <= out;
+                //out <= out_temp;
+            end else begin
+                count <= count + 16;
+                //out_temp <= out;
+                if (count > Div_SIZE - 32) begin
+                    done <= 1;
+                    out <= out_temp;
+                end 
             end
-
         end 
-
     end
-
 endmodule
 
 module encoding_testbench;
@@ -57,7 +57,6 @@ module encoding_testbench;
 
     initial begin
         reset <= 1; @(posedge clk);
-        reset <= 0; @(posedge clk);
         for (int i = 0; i < 32; i++) begin
             projections[i] <= 1;
         end; 
@@ -65,7 +64,8 @@ module encoding_testbench;
         for (int i = 0; i < 16; i++) begin
             features[i] <= 1;
         end; @(posedge clk);
-        
+
+        reset <= 0; @(posedge clk);
         repeat (251) begin
             @(posedge clk);
         end

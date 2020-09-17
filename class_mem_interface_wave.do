@@ -6,6 +6,7 @@ add wave -noupdate /class_mem_interface_testbench/reset
 add wave -noupdate /class_mem_interface_testbench/we
 add wave -noupdate /class_mem_interface_testbench/write_done
 add wave -noupdate /class_mem_interface_testbench/dut/address_in
+add wave -noupdate /class_mem_interface_testbench/dut/total_count_write
 add wave -noupdate /class_mem_interface_testbench/dut/write_address
 add wave -noupdate -expand -group r0 /class_mem_interface_testbench/dut/ram0/mem
 add wave -noupdate -expand -group r1 /class_mem_interface_testbench/dut/ram1/mem
@@ -27,8 +28,8 @@ add wave -noupdate /class_mem_interface_testbench/dut/re
 add wave -noupdate /class_mem_interface_testbench/dut/read_address
 add wave -noupdate /class_mem_interface_testbench/dut/class_out
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {0 ps} 0}
-quietly wave cursor active 0
+WaveRestoreCursors {{Cursor 1} {10400384 ps} 0}
+quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
 configure wave -justifyvalue left
@@ -43,4 +44,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {1 ns}
+WaveRestoreZoom {10399853 ps} {10400853 ps}

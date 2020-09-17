@@ -7,7 +7,7 @@ add wave -noupdate /pipelined_adder_tree_testbench/clk
 add wave -noupdate /pipelined_adder_tree_testbench/dut/first_inter
 add wave -noupdate {/pipelined_adder_tree_testbench/dut/first_results[0]/adder_first/input1}
 add wave -noupdate {/pipelined_adder_tree_testbench/dut/first_results[0]/adder_first/input2}
-add wave -noupdate {/pipelined_adder_tree_testbench/dut/first_results[0]/adder_first/out}
+add wave -noupdate -radix unsigned {/pipelined_adder_tree_testbench/dut/first_results[0]/adder_first/out}
 add wave -noupdate {/pipelined_adder_tree_testbench/dut/first_results[0]/adder_first/carry_out}
 add wave -noupdate {/pipelined_adder_tree_testbench/dut/first_results[0]/adder_first/carry}
 TreeUpdate [SetDefaultTree]

@@ -11,7 +11,7 @@ data_0_in , // data_0
 data_0_out, 
 cs_0      , // Chip Select
 we_0      , // Write Enable/Read Enable
-oe_0      , // Output Enable
+oe_0
 ); 
 
 //--------------Input Ports----------------------- 
@@ -20,7 +20,6 @@ input [ADDR_WIDTH-1:0] address_0;
 input cs_0 ;
 input we_0 ;
 input oe_0 ; 
-
 input [data_0_WIDTH-1:0] data_0_in; 
 
 //--------------Out Ports----------------------- 

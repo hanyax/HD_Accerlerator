@@ -58,10 +58,11 @@ module pipelined_adder_tree #(parameter INPUT_WIDTH = 8, DIM_WIDTH = 16, FTSIZE 
     N_bit_adder #(16) adder_final (.input1(fourth_inter),.input2(last_in),.out(temp_out));
 
     always_ff @(posedge clk) begin
+        /*
         if (reset) begin
             temp_out <= DIM_WIDTH'('b0);
         end
-        /*
+        
         first_store <= first_inter;
         second_store <= second_inter;
         third_store <= third_inter;
