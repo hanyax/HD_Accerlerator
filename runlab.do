@@ -23,7 +23,7 @@ vlog "./accelerator_top.sv"
 #     testbench module you want to execute.
 
 #vsim -voptargs="+acc" -t 1ps -lib work N_bit_adder_testbench
-vsim -voptargs="+acc" -t 1ps -lib work pipelined_adder_tree_testbench
+#vsim -voptargs="+acc" -t 1ps -lib work pipelined_adder_tree_testbench
 #vsim -voptargs="+acc" -t 1ps -lib work mux_accumulator_testbench
 #vsim -voptargs="+acc" -t 1ps -lib work encoding_testbench
 #vsim -voptargs="+acc" -t 1ps -lib work encoding_controller_testbench
@@ -32,14 +32,14 @@ vsim -voptargs="+acc" -t 1ps -lib work pipelined_adder_tree_testbench
 #vsim -voptargs="+acc" -t 1ps -lib work class_mem_interface_testbench
 #vsim -voptargs="+acc" -t 1ps -lib work class_checking_controller_testbench
 #vsim -voptargs="+acc" -t 1ps -lib work similarity_checker_testbench
-#vsim -voptargs="+acc" -t 1ps -lib work accelerator_top_testbench
+vsim -voptargs="+acc" -t 1ps -lib work accelerator_top_testbench
 
 # Source the wave do file
 #     This should be the file that sets up the signal window for
 #     the module you are testing.
 
 #do N_bit_adder_wave.do
-do pipelined_adder_tree_wave.do
+#do pipelined_adder_tree_wave.do
 #do mux_accumulator_wave.do
 #do encoding_wave.do
 #do encoding_controller_wave.do
@@ -48,7 +48,7 @@ do pipelined_adder_tree_wave.do
 #do class_mem_interface_wave.do
 #do class_checking_controller_wave.do
 #do similarity_checker_wave.do
-#do accelerator_top_wave.do
+do accelerator_top_wave.do
 
 # Set the window types
 view wave

@@ -58,7 +58,7 @@ module class_checking_controller_testbench;
 
     parameter period = 100;
 
-    class_checking_controller dut (.clk, .reset_in, .write_data_done, .cur_encode_done, .class_num(26), .class_addrs, .reset_out, .out_done);
+    class_checking_controller dut (.clk, .reset_in, .write_data_done, .cur_encode_done, .class_num(5'b11010), .class_addrs, .reset_out, .out_done);
 
     initial begin
         clk <= 1;

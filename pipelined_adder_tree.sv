@@ -73,7 +73,12 @@ module pipelined_adder_tree #(parameter INPUT_WIDTH = 8, DIM_WIDTH = 16, FTSIZE 
         lastIn_third <= lastIn_second;
         lastIn_fourth <= lastIn_third;
         */
-        out <= temp_out;
+
+        if (reset) begin
+            out <= 0;
+        end else begin
+            out <= temp_out;
+        end 
 
     end
 

@@ -8,7 +8,8 @@ module feature_mem_interface #(Div_SIZE = 512, INOUT_WIDTH = 32, ADDR_WIDTH = 8)
     output logic write_done;
     output logic [INOUT_WIDTH-1:0] out0, out1, out2, out3;
 
-    shortint write_address, address_in, total_count_write;
+    shortint total_count_write;
+    logic [ADDR_WIDTH-1:0] write_address, address_in;
     logic we0, we1, we2, we3;
     logic [1:0] i;
 
