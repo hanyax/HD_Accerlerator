@@ -34,19 +34,13 @@ reg [data_0_WIDTH-1:0] mem [0:RAM_DEPTH-1];
 always_ff @(posedge clk)
 begin : MEM_WRITE
   if ( cs_0 && we_0 ) begin
-     mem[address_0] <= data_0_in;
-  end 
-end
-
-// Memory Read Block 
-// Read Operation : When we_0 = 0, oe_0 = 1, cs_0 = 1
-always_ff@ (posedge clk)
-begin : MEM_READ_0
-  if (cs_0 && !we_0 && oe_0) begin
+    mem[address_0] <= data_0_in;
+    data_0_out <= 0; 
+  end else if (cs_0 && !we_0 && oe_0) begin
     data_0_out <= mem[address_0]; 
   end else begin
     data_0_out <= 0; 
   end  
-end 
+end
 
 endmodule // End of Module ram_dp_sr_sw
