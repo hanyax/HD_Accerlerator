@@ -1,7 +1,7 @@
 `include "accumulator_64.sv"
 
 module encoding_64 #(parameter M_SIZE = 64, N_SIZE = 64, FTWIDTH = 8, DIM_WIDTH = 16, Div_SIZE = 512) (out, done, clk, reset, projections, features);
-    output logic [M_SIZE-1:0][DIM_WIDTH-1:0] out; 
+    output logic [M_SIZE-1:0][7:0] out; 
     output logic done;
     input logic clk, reset;
     input logic [M_SIZE+N_SIZE-1:0] projections;
@@ -16,7 +16,7 @@ module encoding_64 #(parameter M_SIZE = 64, N_SIZE = 64, FTWIDTH = 8, DIM_WIDTH 
     genvar i;
     generate
         for (i=0;i<M_SIZE;i++) begin
-            mux_accumulator_64 adder_mod (.out(out_temp[i]), .clk, .reset, .features, .projections(projections[i+N_SIZE-1:i]), .prev_result(in_temp[i]));
+            mux_accumulator_64 adder_mod (.out(out_temp[i][7:0]), .clk, .reset, .features, .projections(projections[i+N_SIZE-1:i]), .prev_result(in_temp[i]));
         end
     endgenerate
 
@@ -44,7 +44,7 @@ module encoding_64 #(parameter M_SIZE = 64, N_SIZE = 64, FTWIDTH = 8, DIM_WIDTH 
 endmodule
 
 module encoding_64_testbench;
-    logic [63:0] [15:0] out;
+    logic [63:0] [7:0] out;
     logic [63:0][7:0] features;
     logic [127:0] projections;
     logic clk, done, reset;
