@@ -13,10 +13,10 @@ module feature_mem_interface #(Div_SIZE = 512, INOUT_WIDTH = 32, ADDR_WIDTH = 8)
     logic we0, we1, we2, we3;
     logic [1:0] i;
 
-    memory_single ram0 (.clk, .address_0(address_in), .data_0_in(feature_in), .data_0_out(out0), .cs_0(1'b1), .we_0(we0 & we & !write_done), .oe_0(re)); 
-    memory_single ram1 (.clk, .address_0(address_in), .data_0_in(feature_in), .data_0_out(out1), .cs_0(1'b1), .we_0(we1 & we & !write_done), .oe_0(re)); 
-    memory_single ram2 (.clk, .address_0(address_in), .data_0_in(feature_in), .data_0_out(out2), .cs_0(1'b1), .we_0(we2 & we & !write_done), .oe_0(re)); 
-    memory_single ram3 (.clk, .address_0(address_in), .data_0_in(feature_in), .data_0_out(out3), .cs_0(1'b1), .we_0(we3 & we & !write_done), .oe_0(re)); 
+    memory_single ram0 (.clk, .address(address_in), .data_in(feature_in), .data_out(out0), .we(we0 & we & !write_done)); 
+    memory_single ram1 (.clk, .address(address_in), .data_in(feature_in), .data_out(out1), .we(we1 & we & !write_done)); 
+    memory_single ram2 (.clk, .address(address_in), .data_in(feature_in), .data_out(out2), .we(we2 & we & !write_done)); 
+    memory_single ram3 (.clk, .address(address_in), .data_in(feature_in), .data_out(out3), .we(we3 & we & !write_done)); 
 
     always_comb begin
         if (we & !write_done) begin

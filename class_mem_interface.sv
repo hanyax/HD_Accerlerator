@@ -13,25 +13,25 @@ module class_mem_interface #(Div_SIZE = 512, FTWIDTH = 8, M_SIZE = 16, ADDR_WIDT
     logic we0, we1, we2, we3, we4, we5, we6, we7, we8, we9, we10, we11, we12, we13, we14, we15;
     logic [3:0] i;
 
-    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram0 (.clk, .address_0(address_in), .data_0_in(class_in), .data_0_out(class_out[0]), .cs_0(1'b1), .we_0(we0 & we & !write_done), .oe_0(re)); 
-    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram1 (.clk, .address_0(address_in), .data_0_in(class_in), .data_0_out(class_out[1]), .cs_0(1'b1), .we_0(we1 & we & !write_done), .oe_0(re)); 
-    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram2 (.clk, .address_0(address_in), .data_0_in(class_in), .data_0_out(class_out[2]), .cs_0(1'b1), .we_0(we2 & we & !write_done), .oe_0(re)); 
-    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram3 (.clk, .address_0(address_in), .data_0_in(class_in), .data_0_out(class_out[3]), .cs_0(1'b1), .we_0(we3 & we & !write_done), .oe_0(re));
+    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram0 (.clk, .address(address_in), .data_in(class_in), .data_out(class_out[0]), .we(we0 & we & !write_done)); 
+    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram1 (.clk, .address(address_in), .data_in(class_in), .data_out(class_out[1]), .we(we1 & we & !write_done)); 
+    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram2 (.clk, .address(address_in), .data_in(class_in), .data_out(class_out[2]), .we(we2 & we & !write_done)); 
+    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram3 (.clk, .address(address_in), .data_in(class_in), .data_out(class_out[3]), .we(we3 & we & !write_done));
     
-    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram4 (.clk, .address_0(address_in), .data_0_in(class_in), .data_0_out(class_out[4]), .cs_0(1'b1), .we_0(we4 & we & !write_done), .oe_0(re)); 
-    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram5 (.clk, .address_0(address_in), .data_0_in(class_in), .data_0_out(class_out[5]), .cs_0(1'b1), .we_0(we5 & we & !write_done), .oe_0(re)); 
-    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram6 (.clk, .address_0(address_in), .data_0_in(class_in), .data_0_out(class_out[6]), .cs_0(1'b1), .we_0(we6 & we & !write_done), .oe_0(re)); 
-    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram7 (.clk, .address_0(address_in), .data_0_in(class_in), .data_0_out(class_out[7]), .cs_0(1'b1), .we_0(we7 & we & !write_done), .oe_0(re)); 
+    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram4 (.clk, .address(address_in), .data_in(class_in), .data_out(class_out[4]), .we(we4 & we & !write_done)); 
+    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram5 (.clk, .address(address_in), .data_in(class_in), .data_out(class_out[5]), .we(we5 & we & !write_done)); 
+    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram6 (.clk, .address(address_in), .data_in(class_in), .data_out(class_out[6]), .we(we6 & we & !write_done)); 
+    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram7 (.clk, .address(address_in), .data_in(class_in), .data_out(class_out[7]), .we(we7 & we & !write_done)); 
 
-    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram8 (.clk, .address_0(address_in), .data_0_in(class_in), .data_0_out(class_out[8]), .cs_0(1'b1), .we_0(we8 & we & !write_done), .oe_0(re)); 
-    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram9 (.clk, .address_0(address_in), .data_0_in(class_in), .data_0_out(class_out[9]), .cs_0(1'b1), .we_0(we9 & we & !write_done), .oe_0(re)); 
-    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram10 (.clk, .address_0(address_in), .data_0_in(class_in), .data_0_out(class_out[10]), .cs_0(1'b1), .we_0(we10 & we & !write_done), .oe_0(re)); 
-    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram11 (.clk, .address_0(address_in), .data_0_in(class_in), .data_0_out(class_out[11]), .cs_0(1'b1), .we_0(we11 & we & !write_done), .oe_0(re)); 
+    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram8 (.clk, .address(address_in), .data_in(class_in), .data_out(class_out[8]), .we(we8 & we & !write_done)); 
+    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram9 (.clk, .address(address_in), .data_in(class_in), .data_out(class_out[9]), .we(we9 & we & !write_done)); 
+    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram10 (.clk, .address(address_in), .data_in(class_in), .data_out(class_out[10]), .we(we10 & we & !write_done)); 
+    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram11 (.clk, .address(address_in), .data_in(class_in), .data_out(class_out[11]), .we(we11 & we & !write_done)); 
     
-    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram12 (.clk, .address_0(address_in), .data_0_in(class_in), .data_0_out(class_out[12]), .cs_0(1'b1), .we_0(we12 & we & !write_done), .oe_0(re)); 
-    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram13 (.clk, .address_0(address_in), .data_0_in(class_in), .data_0_out(class_out[13]), .cs_0(1'b1), .we_0(we13 & we & !write_done), .oe_0(re)); 
-    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram14 (.clk, .address_0(address_in), .data_0_in(class_in), .data_0_out(class_out[14]), .cs_0(1'b1), .we_0(we14 & we & !write_done), .oe_0(re)); 
-    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram15 (.clk, .address_0(address_in), .data_0_in(class_in), .data_0_out(class_out[15]), .cs_0(1'b1), .we_0(we15 & we & !write_done), .oe_0(re)); 
+    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram12 (.clk, .address(address_in), .data_in(class_in), .data_out(class_out[12]), .we(we12 & we & !write_done)); 
+    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram13 (.clk, .address(address_in), .data_in(class_in), .data_out(class_out[13]), .we(we13 & we & !write_done)); 
+    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram14 (.clk, .address(address_in), .data_in(class_in), .data_out(class_out[14]), .we(we14 & we & !write_done)); 
+    memory_single #(.data_0_WIDTH(FTWIDTH), .ADDR_WIDTH(ADDR_WIDTH)) ram15 (.clk, .address(address_in), .data_in(class_in), .data_out(class_out[15]), .we(we15 & we & !write_done)); 
 
     always_comb begin
         if (we & !write_done) begin

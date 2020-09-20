@@ -1,6 +1,6 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /encoding_controller_testbench/dut/projection_addrs
+add wave -noupdate -radix unsigned -childformat {{{/encoding_controller_testbench/dut/projection_addrs[1]} -radix unsigned} {{/encoding_controller_testbench/dut/projection_addrs[0]} -radix unsigned}} -expand -subitemconfig {{/encoding_controller_testbench/dut/projection_addrs[1]} {-radix unsigned} {/encoding_controller_testbench/dut/projection_addrs[0]} {-radix unsigned}} /encoding_controller_testbench/dut/projection_addrs
 add wave -noupdate /encoding_controller_testbench/dut/feature_addrs
 add wave -noupdate /encoding_controller_testbench/dut/out_done
 add wave -noupdate /encoding_controller_testbench/dut/out_reset
@@ -32,4 +32,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {852756 ps} {853645 ps}
+WaveRestoreZoom {372949 ps} {373838 ps}

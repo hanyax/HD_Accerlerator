@@ -9,8 +9,11 @@ module encoding #(parameter M_SIZE = 16, N_SIZE = 16, FTWIDTH = 8, DIM_WIDTH = 1
 
     logic [M_SIZE-1:0][DIM_WIDTH-1:0] in_temp, out_temp;
     shortint count;
-
+    logic temp;
+    
     assign in_temp = out_temp;
+
+    assign temp = projections[31];
 
     genvar i;
     generate
