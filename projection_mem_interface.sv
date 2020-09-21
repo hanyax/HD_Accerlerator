@@ -1,4 +1,4 @@
-`include "memory_single.sv"
+`include "memory_double.sv"
 
 module projection_mem_interface #(parameter Dhv_SIZE = 4000, IN_WIDTH = 16, ADDR_WIDTH = 8) (clk, reset, proj_ins, read_address0, read_address1, we, re, out0, out1, write_done); 
     input logic [1:0][IN_WIDTH-1:0] proj_ins;
@@ -8,20 +8,14 @@ module projection_mem_interface #(parameter Dhv_SIZE = 4000, IN_WIDTH = 16, ADDR
     output logic write_done;
     output logic [IN_WIDTH-1:0] out0, out1;
     logic [ADDR_WIDTH-1:0] write_address, address_0_in, address_1_in;
-
-
-    memory_single #(.data_0_WIDTH(16), .ADDR_WIDTH(8)) ram0 (.clk, .address(address_0_in), .data_in(proj_ins[0]), .data_out(out0), .we(we & (!write_done)));
-    memory_single #(.data_0_WIDTH(16), .ADDR_WIDTH(8)) ram1 (.clk, .address(address_1_in), .data_in(proj_ins[1]), .data_out(out1), .we(we & (!write_done))); 
  
-    /*
     memory_double ram (.clk, .address_0(address_0_in), .data_0_in(proj_ins[0]), .data_0_out(out0), .we_0(we & (!write_done)), 
     .address_1(address_1_in), .data_1_in(proj_ins[1]), .data_1_out(out1), .we_1(we & (!write_done))); 
-    */
 
     always_comb begin
         if (we & !write_done) begin
             address_0_in = write_address;
-            address_1_in = write_address;
+            address_1_in = write_address + 1;
         end else begin
             address_0_in = read_address0;
             address_1_in = read_address1;
@@ -34,10 +28,10 @@ module projection_mem_interface #(parameter Dhv_SIZE = 4000, IN_WIDTH = 16, ADDR
             write_address <= 0;
         end else begin
             if (we) begin
-                if (write_address >= (Dhv_SIZE/(IN_WIDTH*2)-1)) begin 
+                if (write_address >= (Dhv_SIZE/(IN_WIDTH)-1)) begin 
                     write_done <= 1;
                 end else begin 
-                    write_address <= write_address + 1;
+                    write_address <= write_address + 2;
                 end
             end 
         end
@@ -73,8 +67,8 @@ module projection_mem_interface_testbench;
 
         we <= 0; re <= 1; @(posedge clk);
 
-        for (int i = 0; i < 126; i+=1) begin
-            read_address0 <= i;  read_address1 <= i; @(posedge clk);
+        for (int i = 0; i < 126; i+=2) begin
+            read_address0 <= i;  read_address1 <= i + 1; @(posedge clk);
         end; 
 
         $stop();

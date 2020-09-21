@@ -14,29 +14,25 @@ module encoding_controller #(parameter Dhv_SIZE = 4000, Div_SIZE = 512, PROJ_ADD
     // 512 features
     shortint cur_feature_addr;
     
-    //assign max_horizontal_projection_mem_loc =  30;
-    assign max_horizontal_projection_mem_loc =  15; // = Div_SIZE/(PROJ_OUT_WIDTH*2);
+    assign max_horizontal_projection_mem_loc =  30;
 
     always_comb begin
         // For Projection
         projection_addrs[0] = 0;
         projection_addrs[1] = 0;
-        if (vertical_projection_mem_loc < 110) begin
+        if (vertical_projection_mem_loc < 219) begin
             projection_addrs[0] = vertical_projection_mem_loc + horizontal_projection_mem_loc;
-            projection_addrs[1] = vertical_projection_mem_loc + horizontal_projection_mem_loc;
-            //projection_addrs[1] = vertical_projection_mem_loc + horizontal_projection_mem_loc + 1;
+            projection_addrs[1] = vertical_projection_mem_loc + horizontal_projection_mem_loc + 1;
         end else begin
-            if (horizontal_projection_mem_loc < bound) begin            
+            if (horizontal_projection_mem_loc + 1 < bound) begin            
                 projection_addrs[0] = vertical_projection_mem_loc + horizontal_projection_mem_loc;
-                projection_addrs[1] = vertical_projection_mem_loc + horizontal_projection_mem_loc;
-                //projection_addrs[1] = vertical_projection_mem_loc + horizontal_projection_mem_loc + 1;
-            end else if (horizontal_projection_mem_loc == bound) begin
-                projection_addrs[0] = 0;
-                projection_addrs[1] = vertical_projection_mem_loc + horizontal_projection_mem_loc-1;
-            end else if (horizontal_projection_mem_loc > bound) begin
+                projection_addrs[1] = vertical_projection_mem_loc + horizontal_projection_mem_loc + 1;
+            end else if (horizontal_projection_mem_loc + 1 == bound) begin
+                projection_addrs[0] = vertical_projection_mem_loc + horizontal_projection_mem_loc;
+                projection_addrs[1] = 0;
+            end else if (horizontal_projection_mem_loc >= bound) begin
                 projection_addrs[0] = addr_after_bound;
-                projection_addrs[1] = addr_after_bound;   
-                //projection_addrs[1] = addr_after_bound + 1;        
+                projection_addrs[1] = addr_after_bound + 1;        
             end 
         end
 
@@ -53,7 +49,7 @@ module encoding_controller #(parameter Dhv_SIZE = 4000, Div_SIZE = 512, PROJ_ADD
             // For Projection
             vertical_projection_mem_loc <= 0; 
             horizontal_projection_mem_loc <= 0;
-            bound <= 15;
+            bound <= 31;
             addr_after_bound <= 0;
 
             // For Feature
@@ -67,25 +63,22 @@ module encoding_controller #(parameter Dhv_SIZE = 4000, Div_SIZE = 512, PROJ_ADD
                 if (encoding_cycle_count < 15) begin
                     if (write_data_done) begin
                         // Projection control
-                        if (vertical_projection_mem_loc < 110) begin // = (Dhv_SIZE-Div_SIZE+PROJ_OUT_WIDTH)/PROJ_OUT_WIDTH
+                        if (vertical_projection_mem_loc < 219) begin // = (Dhv_SIZE-Div_SIZE+PROJ_OUT_WIDTH)/PROJ_OUT_WIDTH
                             if (horizontal_projection_mem_loc < max_horizontal_projection_mem_loc) begin
-                                horizontal_projection_mem_loc <= horizontal_projection_mem_loc + 1;
-                                //horizontal_projection_mem_loc <= horizontal_projection_mem_loc + 2;
+                                horizontal_projection_mem_loc <= horizontal_projection_mem_loc + 2;
                             end else begin
                                 horizontal_projection_mem_loc <= 0;
                                 vertical_projection_mem_loc <= vertical_projection_mem_loc + 1;
                             end
                         end else begin
-                            if (vertical_projection_mem_loc == 125) begin // 4000/16
+                            if (vertical_projection_mem_loc == 250) begin // 4000/16
                                 out_done <= 1;
                             end else begin
                                 if (horizontal_projection_mem_loc < max_horizontal_projection_mem_loc) begin
                                     if (horizontal_projection_mem_loc >= bound && horizontal_projection_mem_loc < max_horizontal_projection_mem_loc) begin
-                                        addr_after_bound <= addr_after_bound + 1;
-                                        //addr_after_bound <= addr_after_bound + 2;
+                                        addr_after_bound <= addr_after_bound + 2;
                                     end 
-                                    horizontal_projection_mem_loc <= horizontal_projection_mem_loc + 1;
-                                    //horizontal_projection_mem_loc <= horizontal_projection_mem_loc + 2;
+                                    horizontal_projection_mem_loc <= horizontal_projection_mem_loc + 2;
                                 end else begin
                                     vertical_projection_mem_loc <= vertical_projection_mem_loc + 1; 
                                     horizontal_projection_mem_loc <= 0;

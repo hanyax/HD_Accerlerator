@@ -1,430 +1,7 @@
 do runlab.do
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:49 on Sep 19,2020
-# vlog -reportprogress 300 ./adder.sv 
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# End time: 22:53:49 on Sep 19,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:49 on Sep 19,2020
-# vlog -reportprogress 300 ./pipelined_adder_tree.sv 
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# -- Compiling module pipelined_adder_tree
-# -- Compiling module pipelined_adder_tree_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# 	pipelined_adder_tree_testbench
-# End time: 22:53:49 on Sep 19,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:50 on Sep 19,2020
-# vlog -reportprogress 300 ./pipelined_adder_tree_32.sv 
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# -- Compiling module pipelined_adder_tree_32
-# -- Compiling module pipelined_adder_tree_32_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# 	pipelined_adder_tree_32_testbench
-# End time: 22:53:50 on Sep 19,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:50 on Sep 19,2020
-# vlog -reportprogress 300 ./pipelined_adder_tree_64.sv 
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# -- Compiling module pipelined_adder_tree_64
-# -- Compiling module pipelined_adder_tree_64_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# 	pipelined_adder_tree_64_testbench
-# End time: 22:53:50 on Sep 19,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:50 on Sep 19,2020
-# vlog -reportprogress 300 ./accumulator.sv 
-# -- Compiling module mux_two_one
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# -- Compiling module pipelined_adder_tree
-# -- Compiling module pipelined_adder_tree_testbench
-# -- Compiling module mux_accumulator
-# -- Compiling module mux_accumulator_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# 	pipelined_adder_tree_testbench
-# 	mux_accumulator_testbench
-# End time: 22:53:51 on Sep 19,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:51 on Sep 19,2020
-# vlog -reportprogress 300 ./accumulator_32.sv 
-# -- Compiling module mux_two_one
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# -- Compiling module pipelined_adder_tree_32
-# -- Compiling module pipelined_adder_tree_32_testbench
-# -- Compiling module mux_accumulator_32
-# -- Compiling module mux_accumulator_32_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# 	pipelined_adder_tree_32_testbench
-# 	mux_accumulator_32_testbench
-# End time: 22:53:51 on Sep 19,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:51 on Sep 19,2020
-# vlog -reportprogress 300 ./accumulator_64.sv 
-# -- Compiling module mux_two_one
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# -- Compiling module pipelined_adder_tree_64
-# -- Compiling module pipelined_adder_tree_64_testbench
-# -- Compiling module mux_accumulator_64
-# -- Compiling module mux_accumulator_64_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# 	pipelined_adder_tree_64_testbench
-# 	mux_accumulator_64_testbench
-# End time: 22:53:52 on Sep 19,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:52 on Sep 19,2020
-# vlog -reportprogress 300 ./encoding_module.sv 
-# -- Compiling module mux_two_one
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# -- Compiling module pipelined_adder_tree
-# -- Compiling module pipelined_adder_tree_testbench
-# -- Compiling module mux_accumulator
-# -- Compiling module mux_accumulator_testbench
-# -- Compiling module encoding
-# -- Compiling module encoding_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# 	pipelined_adder_tree_testbench
-# 	mux_accumulator_testbench
-# 	encoding_testbench
-# End time: 22:53:53 on Sep 19,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:53 on Sep 19,2020
-# vlog -reportprogress 300 ./encoding_32.sv 
-# -- Compiling module mux_two_one
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# -- Compiling module pipelined_adder_tree
-# -- Compiling module pipelined_adder_tree_testbench
-# -- Compiling module mux_accumulator
-# -- Compiling module mux_accumulator_testbench
-# -- Compiling module encoding_32
-# -- Compiling module encoding_32_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# 	pipelined_adder_tree_testbench
-# 	mux_accumulator_testbench
-# 	encoding_32_testbench
-# End time: 22:53:53 on Sep 19,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:53 on Sep 19,2020
-# vlog -reportprogress 300 ./encoding_64.sv 
-# -- Compiling module mux_two_one
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# -- Compiling module pipelined_adder_tree_64
-# -- Compiling module pipelined_adder_tree_64_testbench
-# -- Compiling module mux_accumulator_64
-# -- Compiling module mux_accumulator_64_testbench
-# -- Compiling module encoding_64
-# -- Compiling module encoding_64_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# 	pipelined_adder_tree_64_testbench
-# 	mux_accumulator_64_testbench
-# 	encoding_64_testbench
-# End time: 22:53:54 on Sep 19,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:54 on Sep 19,2020
-# vlog -reportprogress 300 ./encoding_controller.sv 
-# -- Compiling module encoding_controller
-# -- Compiling module encoding_controller_testbench
-# 
-# Top level modules:
-# 	encoding_controller_testbench
-# End time: 22:53:55 on Sep 19,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:55 on Sep 19,2020
-# vlog -reportprogress 300 ./memory_single.sv 
-# -- Compiling module memory_single
-# 
-# Top level modules:
-# 	memory_single
-# End time: 22:53:55 on Sep 19,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:55 on Sep 19,2020
-# vlog -reportprogress 300 ./memory_double.sv 
-# -- Compiling module memory_double
-# 
-# Top level modules:
-# 	memory_double
-# End time: 22:53:55 on Sep 19,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:55 on Sep 19,2020
-# vlog -reportprogress 300 ./projection_mem_interface.sv 
-# -- Compiling module memory_single
-# -- Compiling module projection_mem_interface
-# -- Compiling module projection_mem_interface_testbench
-# 
-# Top level modules:
-# 	projection_mem_interface_testbench
-# End time: 22:53:56 on Sep 19,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:56 on Sep 19,2020
-# vlog -reportprogress 300 ./feature_mem_interface.sv 
-# -- Compiling module memory_single
-# -- Compiling module feature_mem_interface
-# -- Compiling module feature_mem_interface_testbench
-# 
-# Top level modules:
-# 	feature_mem_interface_testbench
-# End time: 22:53:56 on Sep 19,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:56 on Sep 19,2020
-# vlog -reportprogress 300 ./class_mem_interface.sv 
-# -- Compiling module memory_single
-# -- Compiling module class_mem_interface
-# -- Compiling module class_mem_interface_testbench
-# 
-# Top level modules:
-# 	class_mem_interface_testbench
-# End time: 22:53:56 on Sep 19,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:56 on Sep 19,2020
-# vlog -reportprogress 300 ./class_checking_controller.sv 
-# -- Compiling module class_checking_controller
-# -- Compiling module class_checking_controller_testbench
-# 
-# Top level modules:
-# 	class_checking_controller_testbench
-# End time: 22:53:57 on Sep 19,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:57 on Sep 19,2020
-# vlog -reportprogress 300 ./similarity_checker.sv 
-# -- Compiling module similarity_checker
-# -- Compiling module similarity_checker_testbench
-# 
-# Top level modules:
-# 	similarity_checker_testbench
-# End time: 22:53:57 on Sep 19,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:57 on Sep 19,2020
-# vlog -reportprogress 300 ./accelerator_top.sv 
-# -- Compiling module mux_two_one
-# -- Compiling module N_bit_adder
-# -- Compiling module full_adder
-# -- Compiling module N_bit_adder_testbench
-# -- Compiling module pipelined_adder_tree
-# -- Compiling module pipelined_adder_tree_testbench
-# -- Compiling module mux_accumulator
-# -- Compiling module mux_accumulator_testbench
-# -- Compiling module encoding
-# -- Compiling module encoding_testbench
-# -- Compiling module encoding_controller
-# -- Compiling module encoding_controller_testbench
-# -- Compiling module accelerator_top
-# -- Compiling module accelerator_top_testbench
-# 
-# Top level modules:
-# 	N_bit_adder_testbench
-# 	pipelined_adder_tree_testbench
-# 	mux_accumulator_testbench
-# 	encoding_testbench
-# 	encoding_controller_testbench
-# 	accelerator_top_testbench
-# End time: 22:53:58 on Sep 19,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work encoding_64_testbench 
-# Start time: 22:53:58 on Sep 19,2020
-# Loading sv_std.std
-# Loading work.encoding_64_testbench
-# Loading work.encoding_64
-# Loading work.mux_accumulator_64
-# Loading work.pipelined_adder_tree_64
-# Loading work.N_bit_adder
-# Loading work.full_adder
-# Loading work.mux_two_one
-# ** Error: (vsim-8378) ./encoding_64.sv(54): Port size (512) does not match connection size (1024) for implicit .name connection port 'out'. The port definition is at: ./encoding_64.sv(3).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut File: ./encoding_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[0]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[1]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[2]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[3]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[4]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[5]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[6]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[7]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[8]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[9]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[10]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[11]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[12]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[13]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[14]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[15]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[16]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[17]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[18]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[19]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[20]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[21]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[22]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[23]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[24]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[25]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[26]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[27]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[28]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[29]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[30]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[31]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[32]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[33]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[34]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[35]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[36]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[37]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[38]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[39]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[40]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[41]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[42]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[43]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[44]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[45]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[46]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[47]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[48]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[49]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[50]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[51]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[52]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[53]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[54]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[55]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[56]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[57]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[58]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[59]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[60]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[61]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[62]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[63]/adder_mod File: accumulator_64.sv
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./runlab.do PAUSED at line 40
-do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:49 on Sep 19,2020
+# Start time: 21:15:55 on Sep 20,2020
 # vlog -reportprogress 300 ./adder.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -432,10 +9,10 @@ do runlab.do
 # 
 # Top level modules:
 # 	N_bit_adder_testbench
-# End time: 22:54:50 on Sep 19,2020, Elapsed time: 0:00:01
+# End time: 21:15:56 on Sep 20,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:50 on Sep 19,2020
+# Start time: 21:15:56 on Sep 20,2020
 # vlog -reportprogress 300 ./pipelined_adder_tree.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -446,10 +23,10 @@ do runlab.do
 # Top level modules:
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_testbench
-# End time: 22:54:50 on Sep 19,2020, Elapsed time: 0:00:00
+# End time: 21:15:57 on Sep 20,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:50 on Sep 19,2020
+# Start time: 21:15:57 on Sep 20,2020
 # vlog -reportprogress 300 ./pipelined_adder_tree_32.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -460,10 +37,10 @@ do runlab.do
 # Top level modules:
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_32_testbench
-# End time: 22:54:51 on Sep 19,2020, Elapsed time: 0:00:01
+# End time: 21:15:57 on Sep 20,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:51 on Sep 19,2020
+# Start time: 21:15:57 on Sep 20,2020
 # vlog -reportprogress 300 ./pipelined_adder_tree_64.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -474,10 +51,10 @@ do runlab.do
 # Top level modules:
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_64_testbench
-# End time: 22:54:51 on Sep 19,2020, Elapsed time: 0:00:00
+# End time: 21:15:58 on Sep 20,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:51 on Sep 19,2020
+# Start time: 21:15:58 on Sep 20,2020
 # vlog -reportprogress 300 ./accumulator.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -492,10 +69,10 @@ do runlab.do
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_testbench
 # 	mux_accumulator_testbench
-# End time: 22:54:52 on Sep 19,2020, Elapsed time: 0:00:01
+# End time: 21:15:59 on Sep 20,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:52 on Sep 19,2020
+# Start time: 21:15:59 on Sep 20,2020
 # vlog -reportprogress 300 ./accumulator_32.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -510,10 +87,10 @@ do runlab.do
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_32_testbench
 # 	mux_accumulator_32_testbench
-# End time: 22:54:53 on Sep 19,2020, Elapsed time: 0:00:01
+# End time: 21:15:59 on Sep 20,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:53 on Sep 19,2020
+# Start time: 21:16:00 on Sep 20,2020
 # vlog -reportprogress 300 ./accumulator_64.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -528,10 +105,10 @@ do runlab.do
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_64_testbench
 # 	mux_accumulator_64_testbench
-# End time: 22:54:53 on Sep 19,2020, Elapsed time: 0:00:00
+# End time: 21:16:00 on Sep 20,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:53 on Sep 19,2020
+# Start time: 21:16:00 on Sep 20,2020
 # vlog -reportprogress 300 ./encoding_module.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -549,10 +126,10 @@ do runlab.do
 # 	pipelined_adder_tree_testbench
 # 	mux_accumulator_testbench
 # 	encoding_testbench
-# End time: 22:54:54 on Sep 19,2020, Elapsed time: 0:00:01
+# End time: 21:16:01 on Sep 20,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:54 on Sep 19,2020
+# Start time: 21:16:01 on Sep 20,2020
 # vlog -reportprogress 300 ./encoding_32.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -570,10 +147,10 @@ do runlab.do
 # 	pipelined_adder_tree_testbench
 # 	mux_accumulator_testbench
 # 	encoding_32_testbench
-# End time: 22:54:55 on Sep 19,2020, Elapsed time: 0:00:01
+# End time: 21:16:02 on Sep 20,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:55 on Sep 19,2020
+# Start time: 21:16:02 on Sep 20,2020
 # vlog -reportprogress 300 ./encoding_64.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -591,49 +168,49 @@ do runlab.do
 # 	pipelined_adder_tree_64_testbench
 # 	mux_accumulator_64_testbench
 # 	encoding_64_testbench
-# End time: 22:54:56 on Sep 19,2020, Elapsed time: 0:00:01
+# End time: 21:16:03 on Sep 20,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:56 on Sep 19,2020
+# Start time: 21:16:03 on Sep 20,2020
 # vlog -reportprogress 300 ./encoding_controller.sv 
 # -- Compiling module encoding_controller
 # -- Compiling module encoding_controller_testbench
 # 
 # Top level modules:
 # 	encoding_controller_testbench
-# End time: 22:54:56 on Sep 19,2020, Elapsed time: 0:00:00
+# End time: 21:16:04 on Sep 20,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:56 on Sep 19,2020
+# Start time: 21:16:04 on Sep 20,2020
 # vlog -reportprogress 300 ./memory_single.sv 
 # -- Compiling module memory_single
 # 
 # Top level modules:
 # 	memory_single
-# End time: 22:54:57 on Sep 19,2020, Elapsed time: 0:00:01
+# End time: 21:16:04 on Sep 20,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:57 on Sep 19,2020
+# Start time: 21:16:04 on Sep 20,2020
 # vlog -reportprogress 300 ./memory_double.sv 
 # -- Compiling module memory_double
 # 
 # Top level modules:
 # 	memory_double
-# End time: 22:54:57 on Sep 19,2020, Elapsed time: 0:00:00
+# End time: 21:16:04 on Sep 20,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:57 on Sep 19,2020
+# Start time: 21:16:04 on Sep 20,2020
 # vlog -reportprogress 300 ./projection_mem_interface.sv 
-# -- Compiling module memory_single
+# -- Compiling module memory_double
 # -- Compiling module projection_mem_interface
 # -- Compiling module projection_mem_interface_testbench
 # 
 # Top level modules:
 # 	projection_mem_interface_testbench
-# End time: 22:54:57 on Sep 19,2020, Elapsed time: 0:00:00
+# End time: 21:16:05 on Sep 20,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:57 on Sep 19,2020
+# Start time: 21:16:05 on Sep 20,2020
 # vlog -reportprogress 300 ./feature_mem_interface.sv 
 # -- Compiling module memory_single
 # -- Compiling module feature_mem_interface
@@ -641,10 +218,10 @@ do runlab.do
 # 
 # Top level modules:
 # 	feature_mem_interface_testbench
-# End time: 22:54:58 on Sep 19,2020, Elapsed time: 0:00:01
+# End time: 21:16:06 on Sep 20,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:58 on Sep 19,2020
+# Start time: 21:16:06 on Sep 20,2020
 # vlog -reportprogress 300 ./class_mem_interface.sv 
 # -- Compiling module memory_single
 # -- Compiling module class_mem_interface
@@ -652,30 +229,30 @@ do runlab.do
 # 
 # Top level modules:
 # 	class_mem_interface_testbench
-# End time: 22:54:59 on Sep 19,2020, Elapsed time: 0:00:01
+# End time: 21:16:06 on Sep 20,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:59 on Sep 19,2020
+# Start time: 21:16:06 on Sep 20,2020
 # vlog -reportprogress 300 ./class_checking_controller.sv 
 # -- Compiling module class_checking_controller
 # -- Compiling module class_checking_controller_testbench
 # 
 # Top level modules:
 # 	class_checking_controller_testbench
-# End time: 22:54:59 on Sep 19,2020, Elapsed time: 0:00:00
+# End time: 21:16:07 on Sep 20,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:59 on Sep 19,2020
+# Start time: 21:16:07 on Sep 20,2020
 # vlog -reportprogress 300 ./similarity_checker.sv 
 # -- Compiling module similarity_checker
 # -- Compiling module similarity_checker_testbench
 # 
 # Top level modules:
 # 	similarity_checker_testbench
-# End time: 22:54:59 on Sep 19,2020, Elapsed time: 0:00:00
+# End time: 21:16:07 on Sep 20,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:54:59 on Sep 19,2020
+# Start time: 21:16:07 on Sep 20,2020
 # vlog -reportprogress 300 ./accelerator_top.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -699,157 +276,44 @@ do runlab.do
 # 	encoding_testbench
 # 	encoding_controller_testbench
 # 	accelerator_top_testbench
-# End time: 22:55:00 on Sep 19,2020, Elapsed time: 0:00:01
+# End time: 21:16:08 on Sep 20,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work encoding_64_testbench 
-# Start time: 22:53:58 on Sep 19,2020
+# vsim -voptargs=""+acc"" -t 1ps -lib work encoding_controller_testbench 
+# Start time: 21:16:08 on Sep 20,2020
 # Loading sv_std.std
-# Loading work.encoding_64_testbench
-# Loading work.encoding_64
-# Loading work.mux_accumulator_64
-# Loading work.pipelined_adder_tree_64
+# Loading work.encoding_controller_testbench
+# Loading work.encoding_controller
+# End time: 21:16:13 on Sep 20,2020, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work accelerator_top_testbench 
+# Start time: 21:16:13 on Sep 20,2020
+# Loading sv_std.std
+# Loading work.accelerator_top_testbench
+# Loading work.accelerator_top
+# Loading work.projection_mem_interface
+# Loading work.memory_double
+# Loading work.feature_mem_interface
+# Loading work.memory_single
+# Loading work.encoding_controller
+# Loading work.encoding
+# Loading work.class_mem_interface
+# Loading work.class_checking_controller
+# Loading work.similarity_checker
+# Loading work.mux_accumulator
+# Loading work.pipelined_adder_tree
 # Loading work.N_bit_adder
 # Loading work.full_adder
 # Loading work.mux_two_one
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[0]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[1]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[2]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[3]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[4]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[5]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[6]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[7]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[8]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[9]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[10]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[11]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[12]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[13]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[14]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[15]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[16]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[17]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[18]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[19]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[20]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[21]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[22]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[23]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[24]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[25]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[26]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[27]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[28]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[29]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[30]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[31]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[32]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[33]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[34]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[35]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[36]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[37]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[38]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[39]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[40]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[41]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[42]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[43]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[44]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[45]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[46]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[47]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[48]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[49]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[50]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[51]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[52]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[53]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[54]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[55]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[56]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[57]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[58]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[59]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[60]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[61]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[62]/adder_mod File: accumulator_64.sv
-# ** Warning: (vsim-3015) ./encoding_64.sv(19): [PCDPC] - Port size (16) does not match connection size (8) for port 'out'. The port definition is at: accumulator_64.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /encoding_64_testbench/dut/genblk1[63]/adder_mod File: accumulator_64.sv
-# ** Warning: Design size of 73858 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: hax032  Hostname: DESKTOP-8CE0NHA  ProcessID: 2788
-#           Attempting to use alternate WLF file "./wlfte4ajin".
+#           Attempting to use alternate WLF file "./wlftszdc55".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfte4ajin
+#           Using alternate file: ./wlftszdc55
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./encoding_64.sv(76)
-#    Time: 1100 ps  Iteration: 1  Instance: /encoding_64_testbench
-# Break in Module encoding_64_testbench at ./encoding_64.sv line 76
+# ** Note: $stop    : ./accelerator_top.sv(107)
+#    Time: 11303100 ps  Iteration: 1  Instance: /accelerator_top_testbench
+# Break in Module accelerator_top_testbench at ./accelerator_top.sv line 107
+# End time: 21:17:10 on Sep 20,2020, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 2

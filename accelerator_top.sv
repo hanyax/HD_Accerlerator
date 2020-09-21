@@ -75,29 +75,32 @@ module accelerator_top_testbench;
     initial begin
         reset <= 1; projection_write <= 0; feature_write <= 0; class_write <= 0; @(posedge clk); reset <= 0; @(posedge clk);
         
-        projection_write <= 1;
+        projection_write <= 1; feature_write <= 1; class_write <= 1;
+        /*
         for (int i = 0; i < 250; i+=2) begin
             reset <= 0; projections_in[0] <= i; projections_in[1] <= i+1;  @(posedge clk);
         end; 
         
-        feature_write <= 1;
         for (int i = 0; i < 514; i++) begin
             feature_in <= i; @(posedge clk);
-        end; 
+        end; */
 
-        class_write <= 1;
         for (int i = 0; i < 104000; i++) begin
+            if (i < 250) begin
+                reset <= 0; projections_in[0] <= i; projections_in[1] <= i+1;  @(posedge clk);
+            end
+
+            if (i < 512) begin
+                feature_in <= i; @(posedge clk);
+            end
+
             if (i < 26) begin
                 coeffs_in <= i;
             end
             class_in <= 2; @(posedge clk);
         end;
-
-        @(posedge clk);
-        @(posedge clk);
-        @(posedge clk);
         
-        repeat (9027) begin // 16250
+        repeat (8268) begin // 16250
             @(posedge clk);
         end
 
