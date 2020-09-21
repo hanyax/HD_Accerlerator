@@ -66,28 +66,36 @@ add wave -noupdate -group {Class_Check Controller} /accelerator_top_testbench/du
 add wave -noupdate -group {Class_Check Controller} /accelerator_top_testbench/dut/class_check_control/class_cur_cycle_count
 add wave -noupdate -group {Class_Check Controller} /accelerator_top_testbench/dut/class_check_control/added_one
 add wave -noupdate -group {Class_Check Controller} /accelerator_top_testbench/dut/class_check_control/encode_done_cur_cycle
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/encode_vector_in
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/class_in
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/coeffs_in
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/clk
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/reset
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/cur_encode_done
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/read_class_done
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/we
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/max_val
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/max_index
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/done
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/results
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/coeffs
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/i
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/j
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/k
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/max_index_temp
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/max
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/result_temp
-add wave -noupdate -group {Simi Check} /accelerator_top_testbench/dut/similarity_check/encode_start
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/encode_vector_in
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/class_in
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/coeffs_in
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/clk
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/reset
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/cur_encode_done
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/read_class_done
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/we
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/max_val
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/max_index
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/done
+add wave -noupdate -expand -group {Sim Check} -expand -group {Coeff Mem} /accelerator_top_testbench/dut/similarity_check/coeffs_mem/mem
+add wave -noupdate -expand -group {Sim Check} -expand -group {Coeff Mem} /accelerator_top_testbench/dut/similarity_check/coeffs_addr
+add wave -noupdate -expand -group {Sim Check} -expand -group {Coeff Mem} /accelerator_top_testbench/dut/similarity_check/coeff_data_in
+add wave -noupdate -expand -group {Sim Check} -expand -group {Coeff Mem} /accelerator_top_testbench/dut/similarity_check/coeff_data_out
+add wave -noupdate -expand -group {Sim Check} -expand -group {Coeff Mem} /accelerator_top_testbench/dut/similarity_check/coeff_we
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/enble_write
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/read_addr
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/write_addr
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/write_data
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/read_data
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/data_1_out_holder
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/j
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/k
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/max_index_temp
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/max
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/result_temp
+add wave -noupdate -expand -group {Sim Check} /accelerator_top_testbench/dut/similarity_check/encode_start
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {11366201 ps} 0}
+WaveRestoreCursors {{Cursor 1} {13686711 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -103,4 +111,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {59747 ps} {60619 ps}
+WaveRestoreZoom {13684967 ps} {13685839 ps}

@@ -73,25 +73,17 @@ module accelerator_top_testbench;
     end
 
     initial begin
-        reset <= 1; projection_write <= 0; feature_write <= 0; class_write <= 0; @(posedge clk); reset <= 0; @(posedge clk);
+        reset <= 1; projection_write <= 0; feature_write <= 0; class_write <= 0; @(posedge clk); reset <= 0;
         
         projection_write <= 1; feature_write <= 1; class_write <= 1;
-        /*
-        for (int i = 0; i < 250; i+=2) begin
-            reset <= 0; projections_in[0] <= i; projections_in[1] <= i+1;  @(posedge clk);
-        end; 
-        
-        for (int i = 0; i < 514; i++) begin
-            feature_in <= i; @(posedge clk);
-        end; */
 
-        for (int i = 0; i < 104000; i++) begin
+        for (int i = 0; i < 128000; i++) begin
             if (i < 250) begin
-                reset <= 0; projections_in[0] <= i; projections_in[1] <= i+1;  @(posedge clk);
+                reset <= 0; projections_in[0] <= i; projections_in[1] <= i+1; 
             end
 
             if (i < 512) begin
-                feature_in <= i; @(posedge clk);
+                feature_in <= i; 
             end
 
             if (i < 26) begin
@@ -100,7 +92,7 @@ module accelerator_top_testbench;
             class_in <= 2; @(posedge clk);
         end;
         
-        repeat (8268) begin // 16250
+        repeat (9059) begin // 16250
             @(posedge clk);
         end
 

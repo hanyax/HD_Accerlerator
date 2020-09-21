@@ -1,4 +1,7 @@
-module similarity_checker #(parameter Dhv_SIZE = 4000, M_SIZE = 16, DIM_WIDTH = 16, FTWIDTH = 8, CLASS_NUM = 26)(encode_vector_in, class_in, coeffs_in, clk, reset, cur_encode_done, read_class_done, we, max_val, max_index, done);
+`include "memory_single.sv"
+`include "memory_dual_port.sv"
+
+module similarity_checker #(parameter Dhv_SIZE = 4000, M_SIZE = 16, DIM_WIDTH = 16, FTWIDTH = 8, CLASS_NUM = 26) (encode_vector_in, class_in, coeffs_in, clk, reset, cur_encode_done, read_class_done, we, max_val, max_index, done);
     input logic [M_SIZE-1:0][DIM_WIDTH-1:0] encode_vector_in;
     input logic [M_SIZE-1:0][FTWIDTH-1:0] class_in;
     input logic [DIM_WIDTH-1:0] coeffs_in;
@@ -6,32 +9,49 @@ module similarity_checker #(parameter Dhv_SIZE = 4000, M_SIZE = 16, DIM_WIDTH = 
     output logic [15:0] max_val;
     output logic [15:0] max_index;
     output logic done;
+    
+    logic [4:0] coeffs_addr;
+    logic [DIM_WIDTH-1:0] coeff_data_in, coeff_data_out;
+    logic coeff_we;
+    memory_single #(.data_0_WIDTH(16), .ADDR_WIDTH(5)) coeffs_mem (.clk, .address(coeffs_addr), .data_in(coeff_data_in), .data_out(coeff_data_out), .we(coeff_we)); 
 
-    logic [25:0][DIM_WIDTH-1:0] results;
-    logic [25:0][DIM_WIDTH-1:0] coeffs;
-    shortint i, j, k, max_index_temp;
+    logic enble_write;
+    logic [4:0] read_addr, write_addr;
+    logic [DIM_WIDTH-1:0] write_data, read_data, data_1_out_holder;
+    memory_dual_port result_mem (.address_0(read_addr), .data_0_in(16'b0), .data_0_out(read_data), .we_0(1'b0), .oe_0(1'b1), .address_1(write_addr), .data_1_in(write_data), .data_1_out(data_1_out_holder), .we_1(enble_write), .oe_1(1'b0)); 
+
+    shortint j, k, max_index_temp;
 
     logic [DIM_WIDTH-1:0] max;
     logic [DIM_WIDTH-1:0] result_temp;
+
     logic encode_start;
     assign max_val = max;
     assign max_index = max_index_temp;
 
     always_ff @(posedge clk) begin
         if (reset) begin
+            coeff_we <= 1;
+            coeffs_addr <= 5'b0;
+            coeff_data_in <= coeffs_in;
             encode_start <= 0;
-            i <= 0;
+            enble_write <= 1;
             j <= 0;
             k <= 0;
             done <= 0;
             max <= 0;
             max_index_temp <= 0;
-            results[0] <= 0; results[1] <= 0; results[2] <= 0; results[3] <= 0; results[4] <= 0; results[5] <= 0; results[6] <= 0; results[7] <= 0; results[8] <= 0; results[9] <= 0; results[10] <= 0; results[11] <= 0; results[12] <= 0; 
-            results[13] <= 0; results[14] <= 0; results[15] <= 0; results[16] <= 0; results[17] <= 0; results[18] <= 0; results[19] <= 0; results[20] <= 0; results[21] <= 0; results[22] <= 0; results[23] <= 0; results[24] <= 0; results[25] <= 0; 
         end else begin
-            if (k < 26 & we) begin
-                coeffs[k] <= coeffs_in;
+            if (k < 32 & we) begin
+                coeff_we <= 1;
+                coeffs_addr <= k;
+                write_addr <= k;
+                coeff_data_in <= coeffs_in;
+                write_data <= 0;
                 k <= k+1;
+            end else begin
+                coeffs_addr <= 0;
+                coeff_we <= 0;
             end
 
             if (!read_class_done) begin
@@ -40,10 +60,11 @@ module similarity_checker #(parameter Dhv_SIZE = 4000, M_SIZE = 16, DIM_WIDTH = 
                         encode_start <= 1;
                     end
                 end else if (cur_encode_done) begin
-                    i <= 0;
+                    read_addr <= 0;
+                    enble_write <= 0;
                 end else begin                    
-                    if (i < 26) begin
-                        results[i] <= results[i] + (class_in[0] * encode_vector_in[0]) + 
+                    if (read_addr < 32) begin
+                        write_data <= read_data + (class_in[0] * encode_vector_in[0]) + 
                         (class_in[1] * encode_vector_in[1]) + 
                         (class_in[2] * encode_vector_in[2]) + 
                         (class_in[3] * encode_vector_in[3]) + 
@@ -59,26 +80,40 @@ module similarity_checker #(parameter Dhv_SIZE = 4000, M_SIZE = 16, DIM_WIDTH = 
                         (class_in[13] * encode_vector_in[13]) + 
                         (class_in[14] * encode_vector_in[14]) + 
                         (class_in[15] * encode_vector_in[15]);
-                        i<=i+1;
-                    end  
+
+                        if (read_addr == 0) begin
+                            enble_write <= 1'b1;
+                        end
+
+                        write_addr <= read_addr;
+                        read_addr <= read_addr + 1;
+                    end else begin
+                    end
                 end
             end else begin
+                
                 if (j == 0) begin
-                    max <= results[0];
+                    max <= coeff_data_out;
+                    read_addr <= j;
+                    coeffs_addr <= j;
                     j <= j+1;
                 end else begin
-                    if (j > 25) begin
+                    if (j > 31) begin
+                        read_addr <= 0;
+                        coeffs_addr <= 0;
                         done <= 1;
                     end else begin
-                        //result_temp = results[j] * coeffs[j];
-                        if ((results[j] * coeffs[j]) > max) begin
-                            max <= (results[j] * coeffs[j]);
+                        read_addr <= j;
+                        coeffs_addr <= j;
+                        if ((read_data * coeff_data_out) > max) begin
+                            max <= (read_data * coeff_data_out);
                             max_index_temp <= j;
                         end
                         j <= j+1;
                     end
                 end
-            end
+                 
+            end 
         end
     end
 endmodule

@@ -17,6 +17,7 @@ vlog "./encoding_64.sv"
 vlog "./encoding_controller.sv"
 vlog "./memory_single.sv"
 vlog "./memory_double.sv"
+vlog "./memory_dual_port.sv"
 vlog "./projection_mem_interface.sv"
 vlog "./feature_mem_interface.sv"
 vlog "./class_mem_interface.sv"
@@ -38,7 +39,7 @@ vlog "./accelerator_top.sv"
 #vsim -voptargs="+acc" -t 1ps -lib work encoding_testbench
 #vsim -voptargs="+acc" -t 1ps -lib work encoding_32_testbench
 #vsim -voptargs="+acc" -t 1ps -lib work encoding_64_testbench
-vsim -voptargs="+acc" -t 1ps -lib work encoding_controller_testbench
+#vsim -voptargs="+acc" -t 1ps -lib work encoding_controller_testbench
 #vsim -voptargs="+acc" -t 1ps -lib work projection_mem_interface_testbench
 #vsim -voptargs="+acc" -t 1ps -lib work feature_mem_interface_testbench
 #vsim -voptargs="+acc" -t 1ps -lib work class_mem_interface_testbench

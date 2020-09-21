@@ -1,7 +1,7 @@
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:55 on Sep 20,2020
+# Start time: 01:31:58 on Sep 21,2020
 # vlog -reportprogress 300 ./adder.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -9,10 +9,10 @@ do runlab.do
 # 
 # Top level modules:
 # 	N_bit_adder_testbench
-# End time: 21:15:56 on Sep 20,2020, Elapsed time: 0:00:01
+# End time: 01:32:00 on Sep 21,2020, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:56 on Sep 20,2020
+# Start time: 01:32:00 on Sep 21,2020
 # vlog -reportprogress 300 ./pipelined_adder_tree.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -23,10 +23,10 @@ do runlab.do
 # Top level modules:
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_testbench
-# End time: 21:15:57 on Sep 20,2020, Elapsed time: 0:00:01
+# End time: 01:32:00 on Sep 21,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:57 on Sep 20,2020
+# Start time: 01:32:01 on Sep 21,2020
 # vlog -reportprogress 300 ./pipelined_adder_tree_32.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -37,10 +37,10 @@ do runlab.do
 # Top level modules:
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_32_testbench
-# End time: 21:15:57 on Sep 20,2020, Elapsed time: 0:00:00
+# End time: 01:32:01 on Sep 21,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:57 on Sep 20,2020
+# Start time: 01:32:01 on Sep 21,2020
 # vlog -reportprogress 300 ./pipelined_adder_tree_64.sv 
 # -- Compiling module N_bit_adder
 # -- Compiling module full_adder
@@ -51,10 +51,10 @@ do runlab.do
 # Top level modules:
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_64_testbench
-# End time: 21:15:58 on Sep 20,2020, Elapsed time: 0:00:01
+# End time: 01:32:02 on Sep 21,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:58 on Sep 20,2020
+# Start time: 01:32:02 on Sep 21,2020
 # vlog -reportprogress 300 ./accumulator.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -69,10 +69,10 @@ do runlab.do
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_testbench
 # 	mux_accumulator_testbench
-# End time: 21:15:59 on Sep 20,2020, Elapsed time: 0:00:01
+# End time: 01:32:04 on Sep 21,2020, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:59 on Sep 20,2020
+# Start time: 01:32:04 on Sep 21,2020
 # vlog -reportprogress 300 ./accumulator_32.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -87,10 +87,10 @@ do runlab.do
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_32_testbench
 # 	mux_accumulator_32_testbench
-# End time: 21:15:59 on Sep 20,2020, Elapsed time: 0:00:00
+# End time: 01:32:05 on Sep 21,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:00 on Sep 20,2020
+# Start time: 01:32:05 on Sep 21,2020
 # vlog -reportprogress 300 ./accumulator_64.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -105,10 +105,10 @@ do runlab.do
 # 	N_bit_adder_testbench
 # 	pipelined_adder_tree_64_testbench
 # 	mux_accumulator_64_testbench
-# End time: 21:16:00 on Sep 20,2020, Elapsed time: 0:00:00
+# End time: 01:32:06 on Sep 21,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:00 on Sep 20,2020
+# Start time: 01:32:06 on Sep 21,2020
 # vlog -reportprogress 300 ./encoding_module.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -126,10 +126,10 @@ do runlab.do
 # 	pipelined_adder_tree_testbench
 # 	mux_accumulator_testbench
 # 	encoding_testbench
-# End time: 21:16:01 on Sep 20,2020, Elapsed time: 0:00:01
+# End time: 01:32:08 on Sep 21,2020, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:01 on Sep 20,2020
+# Start time: 01:32:08 on Sep 21,2020
 # vlog -reportprogress 300 ./encoding_32.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -147,10 +147,10 @@ do runlab.do
 # 	pipelined_adder_tree_testbench
 # 	mux_accumulator_testbench
 # 	encoding_32_testbench
-# End time: 21:16:02 on Sep 20,2020, Elapsed time: 0:00:01
+# End time: 01:32:09 on Sep 21,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:02 on Sep 20,2020
+# Start time: 01:32:09 on Sep 21,2020
 # vlog -reportprogress 300 ./encoding_64.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -168,38 +168,47 @@ do runlab.do
 # 	pipelined_adder_tree_64_testbench
 # 	mux_accumulator_64_testbench
 # 	encoding_64_testbench
-# End time: 21:16:03 on Sep 20,2020, Elapsed time: 0:00:01
+# End time: 01:32:11 on Sep 21,2020, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:03 on Sep 20,2020
+# Start time: 01:32:11 on Sep 21,2020
 # vlog -reportprogress 300 ./encoding_controller.sv 
 # -- Compiling module encoding_controller
 # -- Compiling module encoding_controller_testbench
 # 
 # Top level modules:
 # 	encoding_controller_testbench
-# End time: 21:16:04 on Sep 20,2020, Elapsed time: 0:00:01
+# End time: 01:32:12 on Sep 21,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:04 on Sep 20,2020
+# Start time: 01:32:12 on Sep 21,2020
 # vlog -reportprogress 300 ./memory_single.sv 
 # -- Compiling module memory_single
 # 
 # Top level modules:
 # 	memory_single
-# End time: 21:16:04 on Sep 20,2020, Elapsed time: 0:00:00
+# End time: 01:32:12 on Sep 21,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:04 on Sep 20,2020
+# Start time: 01:32:12 on Sep 21,2020
 # vlog -reportprogress 300 ./memory_double.sv 
 # -- Compiling module memory_double
 # 
 # Top level modules:
 # 	memory_double
-# End time: 21:16:04 on Sep 20,2020, Elapsed time: 0:00:00
+# End time: 01:32:13 on Sep 21,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:04 on Sep 20,2020
+# Start time: 01:32:13 on Sep 21,2020
+# vlog -reportprogress 300 ./memory_dual_port.sv 
+# -- Compiling module memory_dual_port
+# 
+# Top level modules:
+# 	memory_dual_port
+# End time: 01:32:14 on Sep 21,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:32:14 on Sep 21,2020
 # vlog -reportprogress 300 ./projection_mem_interface.sv 
 # -- Compiling module memory_double
 # -- Compiling module projection_mem_interface
@@ -207,10 +216,10 @@ do runlab.do
 # 
 # Top level modules:
 # 	projection_mem_interface_testbench
-# End time: 21:16:05 on Sep 20,2020, Elapsed time: 0:00:01
+# End time: 01:32:14 on Sep 21,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:05 on Sep 20,2020
+# Start time: 01:32:14 on Sep 21,2020
 # vlog -reportprogress 300 ./feature_mem_interface.sv 
 # -- Compiling module memory_single
 # -- Compiling module feature_mem_interface
@@ -218,10 +227,10 @@ do runlab.do
 # 
 # Top level modules:
 # 	feature_mem_interface_testbench
-# End time: 21:16:06 on Sep 20,2020, Elapsed time: 0:00:01
+# End time: 01:32:16 on Sep 21,2020, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:06 on Sep 20,2020
+# Start time: 01:32:16 on Sep 21,2020
 # vlog -reportprogress 300 ./class_mem_interface.sv 
 # -- Compiling module memory_single
 # -- Compiling module class_mem_interface
@@ -229,30 +238,32 @@ do runlab.do
 # 
 # Top level modules:
 # 	class_mem_interface_testbench
-# End time: 21:16:06 on Sep 20,2020, Elapsed time: 0:00:00
+# End time: 01:32:16 on Sep 21,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:06 on Sep 20,2020
+# Start time: 01:32:17 on Sep 21,2020
 # vlog -reportprogress 300 ./class_checking_controller.sv 
 # -- Compiling module class_checking_controller
 # -- Compiling module class_checking_controller_testbench
 # 
 # Top level modules:
 # 	class_checking_controller_testbench
-# End time: 21:16:07 on Sep 20,2020, Elapsed time: 0:00:01
+# End time: 01:32:17 on Sep 21,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:07 on Sep 20,2020
+# Start time: 01:32:17 on Sep 21,2020
 # vlog -reportprogress 300 ./similarity_checker.sv 
+# -- Compiling module memory_single
+# -- Compiling module memory_dual_port
 # -- Compiling module similarity_checker
 # -- Compiling module similarity_checker_testbench
 # 
 # Top level modules:
 # 	similarity_checker_testbench
-# End time: 21:16:07 on Sep 20,2020, Elapsed time: 0:00:00
+# End time: 01:32:18 on Sep 21,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:07 on Sep 20,2020
+# Start time: 01:32:18 on Sep 21,2020
 # vlog -reportprogress 300 ./accelerator_top.sv 
 # -- Compiling module mux_two_one
 # -- Compiling module N_bit_adder
@@ -276,17 +287,10 @@ do runlab.do
 # 	encoding_testbench
 # 	encoding_controller_testbench
 # 	accelerator_top_testbench
-# End time: 21:16:08 on Sep 20,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work encoding_controller_testbench 
-# Start time: 21:16:08 on Sep 20,2020
-# Loading sv_std.std
-# Loading work.encoding_controller_testbench
-# Loading work.encoding_controller
-# End time: 21:16:13 on Sep 20,2020, Elapsed time: 0:00:05
+# End time: 01:32:19 on Sep 21,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work accelerator_top_testbench 
-# Start time: 21:16:13 on Sep 20,2020
+# Start time: 01:32:19 on Sep 21,2020
 # Loading sv_std.std
 # Loading work.accelerator_top_testbench
 # Loading work.accelerator_top
@@ -299,21 +303,24 @@ do runlab.do
 # Loading work.class_mem_interface
 # Loading work.class_checking_controller
 # Loading work.similarity_checker
+# Loading work.memory_dual_port
 # Loading work.mux_accumulator
 # Loading work.pipelined_adder_tree
 # Loading work.N_bit_adder
 # Loading work.full_adder
 # Loading work.mux_two_one
+# ** Warning: (vsim-3015) ./accelerator_top.sv(50): [PCDPC] - Port size (6) does not match connection size (5) for port 'class_num'. The port definition is at: ./class_checking_controller.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /accelerator_top_testbench/dut/class_check_control File: ./class_checking_controller.sv
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: hax032  Hostname: DESKTOP-8CE0NHA  ProcessID: 2788
-#           Attempting to use alternate WLF file "./wlftszdc55".
+#           Attempting to use alternate WLF file "./wlftt4nbjt".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftszdc55
+#           Using alternate file: ./wlftt4nbjt
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./accelerator_top.sv(107)
-#    Time: 11303100 ps  Iteration: 1  Instance: /accelerator_top_testbench
-# Break in Module accelerator_top_testbench at ./accelerator_top.sv line 107
-# End time: 21:17:10 on Sep 20,2020, Elapsed time: 0:00:57
-# Errors: 0, Warnings: 2
+# ** Note: $stop    : ./accelerator_top.sv(99)
+#    Time: 13705900 ps  Iteration: 1  Instance: /accelerator_top_testbench
+# Break in Module accelerator_top_testbench at ./accelerator_top.sv line 99
+# End time: 01:33:25 on Sep 21,2020, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 3

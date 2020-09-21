@@ -133,7 +133,7 @@ module class_mem_interface #(Div_SIZE = 512, FTWIDTH = 8, M_SIZE = 16, ADDR_WIDT
             end
         end
 
-        if (total_count_write >= 104000) begin // 4000 * 26
+        if (total_count_write >= 128000) begin // 4000 * 26
             write_done <= 1;
         end
     end
@@ -159,7 +159,7 @@ module class_mem_interface_testbench;
         reset <= 1; re <= 0; @(posedge clk); 
         reset <= 0; we <= 1; @(posedge clk);
 
-        for (int i = 0; i < 104000; i++) begin
+        for (int i = 0; i < 128000; i++) begin
             class_in <= 1; @(posedge clk);
         end; 
 
